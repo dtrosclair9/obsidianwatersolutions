@@ -12,7 +12,7 @@ const PATH = '/services/water-filtration-gonzales-la'
 export const metadata: Metadata = {
   title: { absolute: 'Water Filtration in Gonzales, LA | City & Well Water' },
   description:
-    'Gonzales homes split between two utilities and private wells. Honest whole-house filtration for chlorine taste, iron & well water. Free test, free install.',
+    'Gonzales homes split between two utilities and private wells. Straight answers and whole-house filtration for chlorine taste, iron, and well water. Free test.',
   alternates: { canonical: pageUrl(PATH) },
   openGraph: {
     title: 'Water Filtration in Gonzales, LA | Obsidian Water Solutions',
@@ -28,20 +28,20 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: 'Is Gonzales water affected by the plants along the river?',
-    a: 'No. Gonzales municipal water comes from deep groundwater wells, not the Mississippi River, and it is treated and monitored before it reaches your tap. The industrial corridor sits above ground; the aquifer your water comes from sits far below it, protected by the geology in between. Filtration in Gonzales is about chlorine taste, sediment, and hardness goals, and about the private wells at the parish edges. It is not an emergency measure, and anyone selling it that way is selling fear.',
+    q: 'How do I know what is in my Gonzales water?',
+    a: 'You test it. Plenty of Gonzales homeowners wonder what is really in their tap water. The honest answer is that you cannot know by looking, guessing, or reading a utility-wide report. Chlorine from cleaning the water, the byproducts it leaves, grit from the lines, how hard the water is, and whatever the pipes in an older home add are all invisible in a clear glass. We do not guess, we test, right at your faucet and for free. On a private well, the test also checks for the iron and manganese that show up across the parish.',
   },
   {
     q: 'What about iron in Ascension Parish wells?',
-    a: 'Iron is the documented, recurring issue in local well water. USGS studies of Ascension Parish groundwater flag iron and manganese as the standout concerns in the Norco aquifer, which supplies hundreds of domestic wells across the parish. If your home is on a well and you see orange staining in tubs and toilets or dark streaks in laundry, that is the pattern, and it is treatable with oxidation and filtration equipment sized to your test numbers.',
+    a: 'Iron is the known, recurring problem in local well water. USGS studies of Ascension Parish groundwater flag iron and manganese as the standout concerns in the Norco aquifer, which feeds hundreds of home wells across the parish. If your home is on a well and you see orange stains in tubs and toilets or dark streaks in laundry, that is the pattern. It is treatable with the right gear, sized to your test numbers.',
   },
   {
     q: 'What does water filtration cost in Gonzales?',
-    a: 'The Complete Home Package lists at $4,599 installed, and package pricing can save up to 40% versus buying each system separately. Individual systems cost less, and a well home usually needs different equipment than a home on city water. The free in-home water test comes first, so the quote matches what is actually in your water, and installation is free either way.',
+    a: 'The Complete Home Package is $4,599 installed, and package pricing can save up to 40% versus buying each system on its own. Single systems cost less. A well home usually needs different gear than a home on city water. The free in-home water test comes first, so the quote matches what is really in your water, and installation is free either way.',
   },
   {
     q: 'Do you cover St. Amant and Geismar too?',
-    a: 'Yes. Gonzales, St. Amant, Geismar, and the roads between them are all regular service area, and that stretch includes plenty of the well homes where iron treatment matters most. The free water test travels anywhere in Ascension Parish at no charge.',
+    a: 'Yes. Gonzales, St. Amant, Geismar, and the roads between them are all regular service area. That stretch includes plenty of the well homes where iron treatment matters most. The free water test travels anywhere in Ascension Parish at no charge.',
   },
 ]
 
@@ -69,7 +69,7 @@ export default function GonzalesFiltrationPage() {
       <JsonLd data={serviceSchema} />
       <PageHero
         title="Water Filtration in Gonzales, Louisiana"
-        intro="Gonzales water depends on your address: two municipal providers serve different parts of town, and the parish edges run on private wells. We test first, tell you honestly which situation you are in, and only then talk equipment."
+        intro="Gonzales water depends on your address. Two city providers serve different parts of town, and the parish edges run on private wells. We test first, tell you straight which one you have, and only then talk gear."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'Services', href: '/services' },
@@ -89,29 +89,28 @@ export default function GonzalesFiltrationPage() {
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
             Ask two neighbors in Gonzales about their water and you can get two
-            different answers, because they may literally have different water.
-            Depending on the address, homes here are served by the city&apos;s own
-            utility or by the parish system, each with its own wells and treatment.
-            Ride out toward St. Amant or the acreage past the interstate and a third
-            category appears: private wells drawing straight from the ground.
+            different answers. They may literally have different water. Depending on
+            the address, homes here run on the city&apos;s own utility or on the parish
+            system, each with its own wells and treatment. Ride out toward St. Amant or
+            the acreage past the interstate and a third kind shows up: private wells
+            pulling straight from the ground.
           </p>
           <p className="mt-5 leading-relaxed text-zinc-600">
-            Living in the middle of the industrial corridor, plenty of Gonzales
-            families also wonder what the plants mean for their tap. The honest
-            answer: your municipal water is deep groundwater, treated and monitored,
-            and the aquifer it comes from sits far below the surface. What filtration
-            actually solves here is the everyday stuff, chlorine taste and odor,
-            sediment, spotting on dishes, and it puts the question to rest with a
-            test result instead of a rumor.
+            Plenty of Gonzales families wonder what is really coming out of their tap.
+            It is a fair question, and no one can settle it by looking or guessing.
+            City water still reaches your home carrying the chlorine used to clean it,
+            the byproducts that come with it, grit from the lines, and whatever the
+            pipes in an older home add. None of that shows up in a clear glass. We do
+            not guess, we test. A reading at your own faucet trades the rumor for a
+            real number.
           </p>
           <p className="mt-5 leading-relaxed text-zinc-600">
             The wells are a different story. USGS studies of Ascension Parish
-            groundwater flag iron and manganese as the recurring concerns in the
-            Norco aquifer, which supplies hundreds of domestic wells across the
-            parish. Well homes around Gonzales see it as orange tub rings and stained
-            laundry, and that calls for real treatment equipment, not a pitcher
-            filter. Either way, the free test tells you which water you have before
-            you spend anything.
+            groundwater flag iron and manganese as the main concerns in the Norco
+            aquifer, which feeds hundreds of home wells across the parish. Well homes
+            around Gonzales see it as orange tub rings and stained laundry. That needs
+            real treatment gear, not a pitcher filter. Either way, the free test tells
+            you which water you have before you spend a dollar.
           </p>
         </div>
       </section>
@@ -127,11 +126,11 @@ export default function GonzalesFiltrationPage() {
             <span className="waterline mt-5" aria-hidden="true" />
             <ul className="mt-8 space-y-4">
               {[
-                'Free in-home water test: iron, hardness, chlorine, TDS, and pH at your tap',
-                'Whole-house carbon filtration for chlorine taste and odor on municipal water',
-                'Sediment filtration that protects water heaters, fixtures, and appliances',
+                'Free in-home water test for iron, chlorine, and how hard the water is, right at your tap',
+                'Whole-house carbon filter for chlorine taste and smell on city water',
+                'Grit filter that protects water heaters, fixtures, and appliances',
                 'Iron and manganese treatment for well homes at the parish edges',
-                'Free installation, typically one visit',
+                'Free installation, usually one visit',
                 'Lifetime warranty on your system, in writing',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -186,10 +185,10 @@ export default function GonzalesFiltrationPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            St. Amant and Geismar fall under the same test-first coverage as
-            Gonzales, wells included. Up the corridor in Prairieville, the story is
-            new construction: softener loops in new garages and tankless heaters
-            that need scale protection from day one. That page covers it.
+            St. Amant and Geismar get the same test-first coverage as Gonzales, wells
+            included. Up the corridor in Prairieville, the story is new construction:
+            softener loops in new garages and tankless heaters that need scale
+            protection from day one. That page covers it.
           </p>
           <p className="mt-4">
             <Link
@@ -205,7 +204,7 @@ export default function GonzalesFiltrationPage() {
       <Faq items={faqs} title="Gonzales water filtration questions" />
       <CtaSection
         title="Get your Gonzales water tested for free"
-        body="City utility, parish system, or private well, we test at your tap and show you the numbers on the spot. If your water is fine as-is, that is exactly what we will tell you."
+        body="City utility, parish system, or private well, we test at your tap and show you the numbers on the spot. You cannot see what is in your water, so stop wondering and measure it. We do not guess, we test."
       />
     </>
   )

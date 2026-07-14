@@ -29,38 +29,38 @@ export const metadata: Metadata = {
 const standards = [
   {
     title: 'The test before the pitch',
-    text: 'No recommendation leaves our mouths before your water has been tested at your own tap. Hardness, iron, chlorine, TDS, and pH get measured first, and the results decide what we suggest, if anything.',
+    text: 'We never suggest a system before we test your water. We measure hardness, iron, chlorine, TDS, and pH right at your tap. Those numbers decide what we recommend, if anything at all.',
   },
   {
-    title: 'Straight answers, both directions',
-    text: 'If the numbers say your water is in good shape, that is the report you get. A recommendation you can trust when your water has a problem requires honesty when it does not.',
+    title: 'Straight answers, every time',
+    text: 'We only recommend what your test calls for. If a system will not help your home, we say so. You can trust our advice on a real problem because we do not invent one.',
   },
   {
     title: 'Systems matched to the water',
-    text: 'City water in Baton Rouge, harder groundwater in the outlying parishes, and iron-heavy private wells are different problems. Equipment gets sized and configured to your test results, never pulled off a one-size shelf.',
+    text: 'City water, harder groundwater in the parishes, and iron-heavy wells are all different problems. We size and set up your equipment from your own test results. Nothing comes off a one-size-fits-all shelf.',
   },
   {
     title: 'Support after the install',
-    text: 'The relationship does not end when the system is running. Filter schedules, salt questions, and setting adjustments get answered by people who know your system, for as long as you own it.',
+    text: 'Our job does not end when the system starts running. Need a filter schedule, a salt question, or a setting changed? You get answers from people who know your system, for as long as you own it.',
   },
 ]
 
 const aboutFaqs = [
   {
     q: 'Is Obsidian Water Solutions a local company?',
-    a: 'Yes. Obsidian Water Solutions is based in Baton Rouge, Louisiana and serves the surrounding region: East Baton Rouge, Livingston, Ascension, and West Baton Rouge Parish. The water problems we treat every week, from chlorine taste on city water to iron and sulfur in Livingston Parish wells, are the water problems of this specific area.',
+    a: 'Yes. We are based in Baton Rouge, Louisiana, and we serve the area around it: East Baton Rouge, Livingston, Ascension, and West Baton Rouge Parish. We treat the water here every week, from chlorine taste on city water to iron and sulfur in Livingston Parish wells. This is the water we know best.',
   },
   {
     q: 'Do you use subcontractors?',
-    a: 'Installations are scheduled and supported by our team from the first phone call through post-install support, and the same company that tests your water stands behind the finished system. If you have questions about exactly who will be working in your home, call us before your appointment and we will walk you through how your installation will be handled.',
+    a: 'Our team handles your job from the first phone call through the install and the support after it. The same company that tests your water stands behind the finished system. Want to know exactly who will be in your home? Call us before your appointment and we will walk you through it.',
   },
   {
     q: 'What brands of equipment do you carry?',
-    a: 'We install professional-grade water treatment equipment matched to what your water test shows, rather than pushing a single brand across every home. The specific systems we would recommend for your home, and why, are exactly what we cover at your free in-home water test.',
+    a: 'We install professional-grade equipment matched to what your water test shows. We do not push one brand on every home. At your free water test, we go over the exact systems we would pick for your home and why.',
   },
   {
     q: 'How do I get started with Obsidian Water Solutions?',
-    a: 'Book the free in-home water test. We test hardness, iron, chlorine, TDS, and pH at your tap, explain the results on the spot, and give you a clear answer about whether treatment makes sense for your home. There is no charge and no obligation either way.',
+    a: 'Book the free in-home water test. We check hardness, iron, chlorine, TDS, and pH at your tap and explain the results on the spot. Then we give you a clear answer on whether treatment makes sense for your home. There is no charge and no pressure either way.',
   },
 ]
 
@@ -81,7 +81,7 @@ export default function AboutPage() {
       <JsonLd data={aboutPageSchema} />
       <PageHero
         title="About Obsidian Water Solutions"
-        intro="A water treatment specialist for the greater Baton Rouge area. We test water, treat water, and support the systems we install. That focus is the whole company, and it is why the work holds up."
+        intro="A water treatment specialist for the greater Baton Rouge area. We test water, treat water, and stand behind every system we install. Water is all we do, and that focus is why the work holds up."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'About', href: PATH },
@@ -99,19 +99,19 @@ export default function AboutPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 text-lg leading-relaxed text-zinc-600">
-            Obsidian Water Solutions is a Baton Rouge water treatment company. Not a
-            plumbing outfit with a softener on the menu, not an air-conditioning
-            company that added filtration to the truck. Testing water, matching
-            equipment to what the test shows, installing it cleanly, and answering the
-            phone afterwards is everything we do.
+            Obsidian Water Solutions is a Baton Rouge water treatment company. We are
+            not a plumbing shop with a softener on the menu. We are not an AC company
+            that tossed filtration on the truck. We test water, match equipment to what
+            the test shows, install it cleanly, and answer the phone afterward. That is
+            all we do.
           </p>
           <p className="mt-5 text-lg leading-relaxed text-zinc-600">
-            That focus matters in this market. Water around Baton Rouge ranges from
-            genuinely good aquifer city water to private wells in Livingston and
-            Ascension Parish running heavy with iron and sulfur, and the right answer
-            for one home is the wrong answer for the next. A company that only sells
-            one solution finds one problem everywhere it looks. A company built around
-            testing can tell you the truth about your specific tap.
+            That focus matters here. Water around Baton Rouge is all over the map. City
+            water comes from a deep aquifer. Private wells in Livingston and Ascension
+            Parish run heavy with iron and sulfur. The right fix for one home is the
+            wrong fix for the next. A company that sells one system sees one problem
+            everywhere. A company built on testing can tell you the truth about your own
+            tap.
           </p>
         </div>
       </section>
@@ -145,20 +145,17 @@ export default function AboutPage() {
             </h2>
             <span className="waterline mt-5" aria-hidden="true" />
             <p className="mt-7 leading-relaxed text-zinc-600">
-              We install professional-grade water treatment equipment, the kind sized
-              and configured for a specific home rather than boxed for a shelf. The
-              design principle behind every system we build is simple: each water
-              problem gets its own dedicated media. Chlorine, hardness, iron, and
-              sulfur are removed by different materials working under different
-              conditions, and asking one tank to do every job at once is how systems
-              underperform and wear out early.
+              We install professional-grade equipment, sized and set up for your home
+              instead of boxed for a shelf. The idea behind every system is simple. Each
+              water problem gets its own media. Chlorine, hardness, iron, and sulfur
+              each need a different material and different conditions. Ask one tank to do
+              every job and it wears out early and works poorly.
             </p>
             <p className="mt-4 leading-relaxed text-zinc-600">
-              So a well with iron and sulfur gets dedicated oxidation media ahead of
-              anything else. A home fighting chlorine taste gets carbon matched to its
-              flow rate. A tankless water heater gets a softener sized to protect it.
-              Your water test determines the combination, and the lifetime warranty
-              covers what we install.
+              So a well with iron and sulfur gets its own oxidation media first. A home
+              with chlorine taste gets carbon sized to its flow rate. A tankless water
+              heater gets a softener built to protect it. Your water test sets the
+              combination, and the lifetime warranty covers what we install.
             </p>
           </div>
           <Image
@@ -180,10 +177,10 @@ export default function AboutPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            Obsidian Water Solutions installs and services water treatment systems
-            across {site.parishes.join(', ')}. That covers Baton Rouge, Baker,
-            Central, and Zachary; Denham Springs, Walker, and Watson; Prairieville,
-            Gonzales, St. Amant, and Geismar; and Port Allen across the river.
+            We install and service water systems across {site.parishes.join(', ')}. That
+            covers Baton Rouge, Baker, Central, and Zachary. It covers Denham Springs,
+            Walker, and Watson. It covers Prairieville, Gonzales, St. Amant, and Geismar.
+            And it covers Port Allen across the river.
           </p>
           <ul className="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-3">
             {cityPages.map((c) => (
@@ -204,7 +201,7 @@ export default function AboutPage() {
 
       <CtaSection
         title="See what we mean by a straight answer"
-        body="Book the free in-home water test. Thirty minutes, real numbers from your own tap, and an honest read on whether your home needs treatment at all."
+        body="Book the free in-home water test. It takes about thirty minutes. You get real numbers from your own tap and an honest read on whether your home needs treatment at all."
       />
     </>
   )

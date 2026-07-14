@@ -12,12 +12,12 @@ const PATH = '/services/reverse-osmosis-system-baton-rouge-la'
 export const metadata: Metadata = {
   title: { absolute: 'Reverse Osmosis Water Systems in Baton Rouge, LA' },
   description:
-    'Tankless reverse osmosis systems installed at your kitchen sink in Baton Rouge. Bottled-water quality without the bottles, with an alkaline stage option.',
+    'Tired of buying bottled water? A reverse osmosis filter at your kitchen sink gives you bottled-water quality on tap. For Baton Rouge homes. Free water test.',
   alternates: { canonical: pageUrl(PATH) },
   openGraph: {
     title: 'Reverse Osmosis Drinking Water Systems in Baton Rouge, LA | Obsidian Water Solutions',
     description:
-      'Tankless reverse osmosis at the kitchen sink for Baton Rouge homes. Bottled-water quality without the bottles, plus an alkaline remineralization option.',
+      'Tired of buying bottled water? A reverse osmosis filter at your kitchen sink gives you bottled-water quality on tap. For Baton Rouge homes. Free water test.',
     url: pageUrl(PATH),
     siteName: site.name,
     images: [ogImage],
@@ -29,27 +29,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What does a reverse osmosis system remove?',
-    a: 'Reverse osmosis strips water down to nearly pure H2O by forcing it through a membrane fine enough to reject dissolved solids, not just particles. That covers the chlorine and residual tastes that survive a basic filter, along with the broad range of dissolved minerals and contaminants measured as TDS. The result at the faucet is the cleanest water available in a home, which is why RO is the standard bottled water plants themselves use.',
+    a: 'Reverse osmosis strips water down to nearly pure water by pushing it through a very fine filter. That filter blocks not just particles but dissolved minerals too. So it takes out the chlorine and leftover tastes that a basic filter misses, along with a wide range of dissolved minerals. The result at the faucet is the cleanest water you can get in a home. That is why bottling plants use reverse osmosis too.',
   },
   {
     q: 'What is the difference between tankless and tank-style RO?',
-    a: 'Tankless RO makes water on demand; tank-style RO fills a pressurized storage tank under the sink and pours from it. We install tankless systems because they free up the cabinet space a tank eats, deliver a stronger faucet flow, and avoid letting finished water sit in storage. Tank systems still work fine, but once people see the compact white tankless unit next to the old bulky setup, the choice tends to make itself.',
+    a: 'Tank-style RO stores water in a big tank under your sink and pours from it. Tankless RO makes water on demand instead. We install tankless systems because they free up the cabinet space a tank eats up. They also give stronger flow at the faucet, and no water sits in storage. Tank systems still work fine. But once people see the slim tankless unit next to the old bulky one, the choice makes itself.',
   },
   {
     q: 'How much does a reverse osmosis system cost?',
-    a: 'RO is the most affordable system we install, and it is included in the Complete Home Package at $4,599 installed, where package pricing saves up to 40% versus buying each system on its own. As a standalone install, we quote it after the free water test so the recommendation fits your water and your sink. Installation is free with your system either way.',
+    a: 'Reverse osmosis is the most affordable system we install. It is included in our Complete Home Package at $4,599 installed, where package pricing saves you up to 40% versus buying each system on its own. On its own, we quote it after the free water test, so it fits your water and your sink. Installation is free with your system either way.',
   },
   {
     q: 'Does reverse osmosis waste water?',
-    a: 'Every RO system sends some water to the drain, because rinsing the rejected minerals off the membrane is how the technology works. Traditional tank systems were genuinely inefficient at this. The modern tankless units we install are engineered to send far less to the drain per gallon produced, and for a faucet that supplies drinking and cooking water, the total volume involved is small in household terms.',
+    a: 'Every reverse osmosis system sends some water to the drain. Rinsing the blocked minerals off the filter is how it works. Old tank systems were truly wasteful at this. The modern tankless units we install send far less water to the drain per gallon made. And for a faucet that only supplies drinking and cooking water, the total is small for a home.',
   },
   {
     q: 'How often do RO filters need to be changed?',
-    a: 'Typically about once a year for the main filter set, and we confirm the exact schedule for your system at installation. Filter changes on the tankless units we install are a quick twist-out, twist-in job, no wrenches and no crawling through the cabinet. Your usage and incoming water quality set the real-world pace, which is another thing the free water test tells us up front.',
+    a: 'Usually about once a year for the main filter set, and we confirm the exact schedule at install. On the tankless units we install, a filter change is a quick twist out and twist in. No wrenches, no crawling through the cabinet. Your use and your incoming water set the real pace, which is one more thing the free water test tells us up front.',
   },
   {
     q: 'What does the alkaline remineralization stage do?',
-    a: 'It adds a measured blend of healthy minerals back into the water after the membrane has stripped everything out. Pure RO water is extremely clean but tastes flat to some palates, and the alkaline stage restores the crisp, mineral-water character many people prefer while nudging pH upward. It is an optional add-on, and tasting the difference at the faucet is the only test that matters.',
+    a: 'It adds a measured blend of healthy minerals back into the water after the filter. Pure reverse osmosis water is very clean, but it tastes flat to some people. The alkaline stage brings back the crisp, mineral-water taste many people like. It is an optional add-on, and tasting the difference at the faucet is the only test that matters.',
   },
 ]
 
@@ -78,7 +78,7 @@ export default function ReverseOsmosisPage() {
       <JsonLd data={serviceSchema} />
       <PageHero
         title="Reverse Osmosis Drinking Water Systems in Baton Rouge, Louisiana"
-        intro="A compact tankless reverse osmosis system at your kitchen sink turns the tap into the best water in the house: bottled-water quality on demand, without the cases, the plastic, or the grocery run. Fill the glass, the coffee maker, and the pot straight from the faucet."
+        intro="Tired of hauling home cases of bottled water? A reverse osmosis filter under your kitchen sink can end that. Reverse osmosis pushes water through a very fine filter that strips out almost everything. You get bottled-water quality right from the tap. Fill your glass, your coffee maker, and your pots straight from the faucet."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'Services', href: '/services' },
@@ -97,40 +97,40 @@ export default function ReverseOsmosisPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            If your household buys bottled water, you are already paying for reverse
-            osmosis. Most bottled water is simply RO-treated municipal water with a
-            label on it. A system under your own sink produces the same quality on
-            demand, and the cases you stop hauling in from the car pay toward the
-            system month after month. No more running out mid-week, no more plastic
-            piling up in the recycling bin, no more lukewarm bottles in the garage.
+            If your home buys bottled water, you are already paying for reverse
+            osmosis. Most bottled water is just city water run through a reverse
+            osmosis filter, with a label added. A system under your own sink makes
+            the same quality on demand. And the cases you stop hauling in pay toward
+            the system month after month. No more running out mid-week. No more
+            plastic piling up. No more warm bottles in the garage.
           </p>
           <div className="mt-10 space-y-8">
             <div>
               <h3 className="text-xl font-semibold">Drinking water your kids will actually choose</h3>
               <p className="mt-3 leading-relaxed text-zinc-600">
-                When the tap tastes better than the sports drink, the fight is over.
-                Families tell us the RO faucet changes what everyone in the house
-                reaches for, from the toddler&apos;s sippy cup to the water bottles
-                that leave for school and practice every morning.
+                When the tap tastes better than a sports drink, the fight is over.
+                Families tell us the reverse osmosis faucet changes what everyone
+                reaches for. From the toddler&apos;s sippy cup to the water bottles
+                that head out for school and practice each morning.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold">Coffee and cooking on a clean slate</h3>
               <p className="mt-3 leading-relaxed text-zinc-600">
-                Coffee is mostly water, and so are rice, beans, stock, and pasta.
-                Chlorine and dissolved solids flatten flavors that RO water lets
-                through. If you have ever wondered why cafe coffee tastes different
-                from the same beans at home, the water is a bigger part of the answer
-                than the machine.
+                Coffee is mostly water. So are rice, beans, stock, and pasta.
+                Chlorine and dissolved minerals flatten flavors that clean water lets
+                through. Ever wonder why coffee at a cafe tastes better than the same
+                beans at home? The water is a bigger part of the answer than the
+                machine.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold">An optional alkaline finish</h3>
               <p className="mt-3 leading-relaxed text-zinc-600">
-                The alkaline remineralization stage adds healthy minerals back after
-                the membrane, for the crisp taste of premium mineral water rather
-                than the flat profile of pure RO. It is a simple add-on stage, chosen
-                at install or added later.
+                Reverse osmosis water is very clean, but it can taste flat to some
+                people. The alkaline stage adds a few healthy minerals back in. That
+                gives you the crisp taste of premium mineral water instead. It is a
+                simple add-on, and you can pick it at install or add it later.
               </p>
             </div>
           </div>
@@ -143,21 +143,21 @@ export default function ReverseOsmosisPage() {
           <div>
             <p className="section-label">Why tankless</p>
             <h2 className="text-3xl md:text-4xl font-semibold mt-3">
-              Tankless RO: the whole cabinet back, better flow at the faucet
+              Tankless RO: more cabinet space, stronger flow
             </h2>
             <span className="waterline mt-5" aria-hidden="true" />
             <p className="mt-7 leading-relaxed text-zinc-600">
-              Older RO setups fill the under-sink cabinet with a pressure tank and a
-              tangle of small filters. The tankless systems we install replace all of
-              that with one slim white unit that makes water on demand: stronger flow
-              at the dedicated faucet, no stored water sitting in a tank, and room
-              left over for everything the cabinet was actually for.
+              Older reverse osmosis setups fill the cabinet under your sink with a
+              big tank and a tangle of filters. The tankless systems we install swap
+              all that for one slim white unit. It makes water on demand. So you get
+              stronger flow at the faucet, no stored water sitting in a tank, and
+              room left for what the cabinet was meant to hold.
             </p>
             <p className="mt-4 leading-relaxed text-zinc-600">
-              Filter changes are tool-free twist-and-replace, and the free water test
-              before installation confirms the system suits what is coming into your
-              home, whether that is city water in Baton Rouge or treated well water
-              out in the parishes.
+              Filter changes twist out and back in by hand, no tools. And the free
+              water test before we install confirms the system fits what comes into
+              your home, whether that is city water in Baton Rouge or treated well
+              water out in the parishes.
             </p>
           </div>
           <Image
@@ -181,11 +181,11 @@ export default function ReverseOsmosisPage() {
           <ul className="mt-8 space-y-4">
             {[
               'Free in-home water test before any quote',
-              'Compact tankless RO unit with a dedicated sink faucet',
-              'Optional alkaline remineralization stage',
-              'Free professional installation at your kitchen sink',
+              'A slim tankless RO unit with its own sink faucet',
+              'An optional alkaline stage for a crisper taste',
+              'Free professional install at your kitchen sink',
               'Lifetime warranty on your system, in writing',
-              'Filter change schedule confirmed and explained at install',
+              'A simple filter-change schedule explained at install',
             ].map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <span
@@ -208,18 +208,18 @@ export default function ReverseOsmosisPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            Reverse osmosis is a point-of-use system: it perfects the kitchen faucet
-            and leaves the showers, laundry, and water heater to whatever arrives at
-            the main line. Many homes pair an RO unit with{' '}
+            Reverse osmosis cleans one faucet: your kitchen sink. It leaves your
+            showers, laundry, and water heater to whatever reaches the main line. So
+            many homes pair a reverse osmosis unit with{' '}
             <Link
               href="/services/whole-house-water-filtration-baton-rouge-la"
               className="text-primary font-semibold hover:text-primary-dark transition-colors"
             >
               whole house water filtration
             </Link>{' '}
-            so both jobs are covered. We install RO systems across the metro,
-            including family suburbs like Zachary, where drinking water for kids is
-            usually the reason we get the call.
+            and both jobs are covered. We install reverse osmosis systems across the
+            metro. That includes family suburbs like Zachary, where drinking water
+            for the kids is usually the reason people call.
           </p>
           <p className="mt-4">
             <Link
@@ -230,7 +230,7 @@ export default function ReverseOsmosisPage() {
             </Link>
           </p>
           <p className="mt-6 leading-relaxed text-zinc-600">
-            Curious what your tap water measures before anything is installed?{' '}
+            Curious what your tap water measures before anything goes in?{' '}
             <Link
               href="/contact"
               className="text-primary font-semibold hover:text-primary-dark transition-colors"
@@ -245,7 +245,7 @@ export default function ReverseOsmosisPage() {
       <Faq items={faqs} title="Reverse osmosis questions, answered" />
       <CtaSection
         title="Put bottled-water quality on tap"
-        body="The free in-home water test shows you the TDS number your tap starts with and what a reverse osmosis system would take it to. Free installation, a lifetime warranty, and a faucet the whole household will fight over."
+        body="The free in-home water test shows you where your tap water starts and what a reverse osmosis system would take it to. Free installation, a lifetime warranty, and a faucet the whole house will fight over."
       />
     </>
   )

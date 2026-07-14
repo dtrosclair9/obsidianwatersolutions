@@ -12,7 +12,7 @@ const PATH = '/services/well-water-treatment-walker-la'
 export const metadata: Metadata = {
   title: { absolute: 'Well Water Treatment in Walker, LA | Iron & Sulfur' },
   description:
-    'Iron & sulfur removal for private wells in Walker, Watson & Holden. Free well water testing, dual-tank systems, free installation in Livingston Parish.',
+    'Orange stains and a rotten-egg smell from your Walker well? We pull out the iron and sulfur. Free well water test, free install across Livingston Parish.',
   alternates: { canonical: pageUrl(PATH) },
   openGraph: {
     title: 'Well Water Treatment in Walker, LA | Obsidian Water Solutions',
@@ -29,19 +29,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'Why is well water around Walker so high in iron?',
-    a: 'The shallow aquifers under Livingston Parish naturally run high in dissolved iron and manganese, a pattern documented in USGS groundwater studies of the parish. Wells around Walker, Watson, and Holden draw from exactly that water, which is why orange staining is close to universal in unfiltered well homes here. It is a geology problem, and it has an equipment solution.',
+    a: 'The shallow aquifers under Livingston Parish run high in dissolved iron and manganese. USGS groundwater studies of the parish have documented that pattern. Wells around Walker, Watson, and Holden draw from exactly that water. That is why orange staining shows up in almost every well home here that has no filter. It is a geology problem, and it has an equipment fix.',
   },
   {
     q: 'Do you actually come out to Walker, or just Baton Rouge?',
-    a: 'Walker and the well belt around it are core service area for us, not an edge case. Most of the wells we treat are in Livingston Parish, and the drive from Baton Rouge is part of every well quote at no charge, including the free in-home water test.',
+    a: 'Walker and the well belt around it are core service area for us, not an afterthought. Most of the wells we treat are in Livingston Parish. The drive from Baton Rouge is part of every well quote at no charge, and so is the free in-home water test.',
   },
   {
     q: 'My neighbor has a filter and still gets stains. Why?',
-    a: 'Usually because the system was a generic softener or an undersized single-tank filter rather than equipment matched to the actual iron level. Iron heavy enough to stain will overwhelm a system that was never sized for it. We test first, then build the system around the numbers, which is the difference between managing iron and eliminating it.',
+    a: 'Usually the system was a plain softener or an undersized single tank, not gear matched to the real iron level. Iron heavy enough to stain will overwhelm a system that was never sized for it. We test first, then build the system around your numbers. That is the difference between managing the iron and getting rid of it.',
   },
   {
     q: 'How fast can a well system be installed in Walker?',
-    a: 'Once your test is done and the system is specified, installation is typically a single visit at your well line. Installation is free with the system, and we verify iron and sulfur at the tap before we leave.',
+    a: 'Once your test is done and the system is picked, installation is usually a single visit at your well line. It is free with the system, and we check the iron and sulfur at your tap before we leave.',
   },
 ]
 
@@ -68,7 +68,7 @@ export default function WalkerWellPage() {
       <JsonLd data={serviceSchema} />
       <PageHero
         title="Well Water Treatment in Walker, Louisiana"
-        intro="Walker sits in the middle of Livingston Parish's well belt, where private wells run orange with iron and the shower smells like sulfur. We test Walker wells for free and build dual-tank systems around what your well actually pulls up."
+        intro="Walker sits in the middle of the Livingston Parish well belt. Out here, private wells run orange with iron and the shower smells like rotten eggs. We test Walker wells for free and build two-tank systems around what your well actually pulls up."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'Services', href: '/services' },
@@ -87,26 +87,25 @@ export default function WalkerWellPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            Between Walker, Watson, and Holden, a huge share of homes sit outside any
-            municipal water system and draw from private wells. USGS groundwater
-            surveys of Livingston Parish have flagged iron and manganese above
-            secondary drinking-water limits as a recurring pattern in the local
-            aquifers. That is the orange ring in your tub and the dark streaks in the
-            washer, and it is not going away on its own, because it is in the ground
+            Between Walker, Watson, and Holden, most homes sit outside any city water
+            system and pull from private wells. USGS groundwater studies of Livingston
+            Parish keep finding iron and manganese above the recommended limits in the
+            local aquifers. That is the orange ring in your tub and the dark streaks in
+            your washer. It will not clear up on its own, because it is in the ground
             itself.
           </p>
           <p className="mt-5 leading-relaxed text-zinc-600">
-            Hydrogen sulfide rides along in many of the same wells, harmless at typical
-            levels but impossible to live with once it takes over a hot shower. The
-            good news: both problems are fully treatable with oxidation media sized to
-            your well&apos;s numbers, and both disappear from every tap at once when the
-            system sits at the well line instead of under one sink.
+            That rotten-egg smell rides along in many of the same wells. It is a sulfur
+            gas. It is usually harmless, but it is hard to live with once it takes over
+            a hot shower. The good news: both problems are fully treatable. The right
+            system turns the iron and sulfur into bits a filter can catch, sized to the
+            numbers from your well. Put it at the well line and the smell and stains
+            leave every tap at once.
           </p>
           <p className="mt-5 leading-relaxed text-zinc-600">
-            Walker also grew fast enough that plenty of newer subdivisions mix well and
-            community-system homes street by street. If you are not sure which one you
-            have, the free test answers that too, along with exactly what is in the
-            water either way.
+            Walker grew fast, so plenty of newer subdivisions mix well homes and
+            city-water homes street by street. Not sure which one you have? The free
+            test answers that too, along with exactly what is in your water either way.
           </p>
         </div>
       </section>
@@ -122,12 +121,12 @@ export default function WalkerWellPage() {
             <span className="waterline mt-5" aria-hidden="true" />
             <ul className="mt-8 space-y-4">
               {[
-                'Free in-home well test: iron, sulfur indicators, hardness, pH, TDS',
-                'Oxidation stage that turns dissolved iron and sulfide into filterable particles',
-                'Dedicated filtration tank with media matched to your test results',
-                'Sediment protection for your pump, pressure tank, and plumbing',
+                'Free in-home well test for iron, sulfur, and how hard the water is',
+                'A stage that turns dissolved iron and sulfur into bits a filter can catch',
+                'A filter tank with media matched to your test results',
+                'Grit protection for your pump, pressure tank, and plumbing',
                 'Free installation at the well line, one visit for most homes',
-                'Lifetime warranty and post-install support from the same local team',
+                'Lifetime warranty and after-install support from the same local team',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span
@@ -165,10 +164,9 @@ export default function WalkerWellPage() {
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
             The same Livingston Parish groundwater runs under Watson and Holden, and we
-            treat wells across all of it. Closer to Denham Springs, homes on the
-            municipal system deal with a different problem: the parish&apos;s
-            documented brown-water events. That calls for filtration rather than well
-            equipment, and it has its own page.
+            treat wells across all of it. Closer to Denham Springs, homes on city water
+            face a different problem: the parish&apos;s known brown-water events. That
+            calls for a filter instead of well gear, and it has its own page.
           </p>
           <p className="mt-4">
             <Link
@@ -184,7 +182,7 @@ export default function WalkerWellPage() {
       <Faq items={faqs} title="Walker well water questions" />
       <CtaSection
         title="Get your Walker well tested for free"
-        body="We drive out, test at your tap, and give you the numbers and a straight answer. If the well is fine, you will hear that too."
+        body="We drive out, test right at your tap, and hand you the numbers with a straight answer. No pressure, no sales script."
       />
     </>
   )

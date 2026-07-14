@@ -12,7 +12,7 @@ const PATH = '/services/water-filtration-zachary-la'
 export const metadata: Metadata = {
   title: { absolute: 'Water Filtration in Zachary, LA | Drinking Water' },
   description:
-    'Zachary tap water is solid. Filtration makes it yours: reverse osmosis at the sink for the kids, chlorine-free taste, appliance protection. Free water test.',
+    'You cannot see what is in your water. Reverse osmosis at the sink for the kids, plus chlorine and grit removal for Zachary homes. Free in-home water test.',
   alternates: { canonical: pageUrl(PATH) },
   openGraph: {
     title: 'Water Filtration in Zachary, LA | Obsidian Water Solutions',
@@ -28,20 +28,20 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    q: 'Is Zachary tap water safe to drink?',
-    a: 'Yes. Zachary draws from the same deep Southern Hills Aquifer system that supplies the rest of the Baton Rouge area, and the water is treated and monitored before it reaches your tap. Filtration here is not a safety rescue. It is about taste, chlorine, and how far you want to take drinking-water quality for your household, which is a goal, not an alarm.',
+    q: 'What is actually in Zachary tap water?',
+    a: 'More than you can see in the glass. City water reaches your Zachary tap carrying the chlorine added to clean it, the byproducts that come with it, and whatever grit the lines shed along the way. In older homes, the aging pipes can add to it. The area typically has decent source water, but that is a starting point, not a guarantee of what reaches your glass. The only way to know your numbers is the free in-home test.',
   },
   {
     q: 'What is the best system for kids’ drinking water?',
-    a: 'A reverse osmosis system at the kitchen sink. It polishes the water your family actually drinks and cooks with down to bottled-water quality, without the bottles, so filling cups and water bottles for school comes from the best tap in the house. It installs under the sink, and the free water test confirms what it is starting from.',
+    a: 'A reverse osmosis system at the kitchen sink. It polishes the water your family drinks and cooks with down to bottled-water quality, without the bottles. Filling cups and school water bottles comes from the best tap in the house. It installs under the sink, and the free water test confirms what it is starting from.',
   },
   {
     q: 'What does water filtration cost in Zachary?',
-    a: 'The Complete Home Package lists at $4,599 installed, and package pricing can save up to 40% versus buying each system separately. A standalone reverse osmosis system costs much less than the package. The free in-home water test comes first, so we quote only the equipment your water and your goals actually call for, and installation is free either way.',
+    a: 'The Complete Home Package is $4,599 installed, and package pricing can save up to 40% versus buying each system on its own. A reverse osmosis system on its own costs much less than the package. The free in-home water test comes first, so we quote only the gear your water and your goals actually call for, and installation is free either way.',
   },
   {
     q: 'Do you serve Central and Baker too?',
-    a: 'Yes. Zachary, Central, and Baker are all regular service area, along with the rural roads in between. Central in particular mixes city-water homes with private wells, and well homes need different equipment than anything on this page. The free test sorts that out at your tap before anyone talks systems.',
+    a: 'Yes. Zachary, Central, and Baker are all regular service area, along with the rural roads in between. Central in particular mixes city-water homes with private wells, and well homes need different gear than anything on this page. The free test sorts that out at your tap before anyone talks systems.',
   },
 ]
 
@@ -68,7 +68,7 @@ export default function ZacharyFiltrationPage() {
       <JsonLd data={serviceSchema} />
       <PageHero
         title="Water Filtration in Zachary, Louisiana"
-        intro="Families move to Zachary for the schools, and the water questions follow: what the kids drink at the sink, why the tap tastes like chlorine, and how to protect the appliances in a newer build. Good news first, your water is solid. Here is what filtration adds."
+        intro="Families move to Zachary for the schools, and the water questions follow. What are the kids drinking and bathing in? Why does the tap taste like chlorine? How do you protect the appliances in a newer home? You cannot see chlorine, grit, or what old pipes add in a clear glass. The only way to know what is in your water is to test it, and the in-home test is free."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'Services', href: '/services' },
@@ -83,33 +83,33 @@ export default function ZacharyFiltrationPage() {
         <div className="container-wide max-w-4xl">
           <p className="section-label">Zachary water, honestly</p>
           <h2 className="text-3xl md:text-4xl font-semibold mt-3">
-            The water is good. The question is what you want at the sink.
+            What is in the water your kids drink and bathe in?
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            Zachary&apos;s tap water comes from the same deep Southern Hills Aquifer
-            system as the rest of the Baton Rouge area, hundreds of feet of geology
-            away from anything on the surface, treated and monitored on its way to
-            your house. We lead with that because it is true, and because a company
-            that would scare you about good water would say anything. Nobody in
-            Zachary needs a filter to be safe.
+            The area typically has decent source water, but that is a starting point,
+            not a guarantee of what reaches your glass. Between the treatment plant and
+            your kitchen, the water picks up chlorine used to clean it, the byproducts
+            that come with it, and grit from the lines. In an older home, the aging
+            pipes add to it. None of that shows up in a clear glass. That is exactly
+            why families here ask us to test before they decide.
           </p>
           <p className="mt-5 leading-relaxed text-zinc-600">
-            What families here actually ask us about is the sink. When the kids fill
-            water bottles for school every morning, parents want that tap to be the
-            best water in the house, and a reverse osmosis system under the kitchen
-            sink does exactly that: bottled-water taste, no case of plastic bottles
-            in the pantry. The chlorine that keeps the distribution system clean is
-            also the taste most people want gone, and carbon filtration removes it at
-            the tap or across the whole house.
+            The sink is where it matters most. When the kids fill water bottles for
+            school, parents want that tap to be the best water in the house. A reverse
+            osmosis system under the kitchen sink delivers it: clean, crisp drinking
+            water with no pantry full of plastic bottles. The chlorine taste that
+            follows city water through the pipes is the complaint most people want
+            gone, and a carbon filter takes it out at the tap or across the whole
+            house.
           </p>
           <p className="mt-5 leading-relaxed text-zinc-600">
-            The other Zachary pattern is newer construction. Subdivisions like
-            Americana filled with recent builds and recent appliances, and filtration
-            plus softening is how a tankless heater and a new dishwasher stay new.
-            Even naturally low-hardness water leaves scale over years of hot-water
-            cycles, so protecting a house full of new equipment is a when question
-            more than a whether question.
+            The other Zachary pattern is newer homes. Subdivisions like Americana
+            filled up with recent builds and recent appliances. A filter plus a
+            softener is how a tankless heater and a new dishwasher stay new. Hard-water
+            minerals leave scale over years of hot-water cycles, so protecting a house
+            full of new gear is more a when than an if. A free hardness test tells you
+            where your home stands.
           </p>
         </div>
       </section>
@@ -125,11 +125,11 @@ export default function ZacharyFiltrationPage() {
             <span className="waterline mt-5" aria-hidden="true" />
             <ul className="mt-8 space-y-4">
               {[
-                'Free in-home water test: hardness, chlorine, TDS, iron, and pH at your tap',
+                'Free in-home water test for chlorine, iron, and how hard the water is, right at your tap',
                 'Tankless reverse osmosis at the kitchen sink for drinking and cooking water',
-                'Whole-house carbon filtration for chlorine taste and odor in every shower',
-                'Scale protection for tankless heaters and appliances in newer builds',
-                'Free installation, typically one visit',
+                'Whole-house carbon filter for chlorine taste and smell in every shower',
+                'Scale protection for tankless heaters and appliances in newer homes',
+                'Free installation, usually one visit',
                 'Lifetime warranty on your system, in writing',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -178,11 +178,11 @@ export default function ZacharyFiltrationPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            Central and Baker get the same test-first treatment as Zachary. The
-            rural stretches of northern East Baton Rouge Parish also hold private
-            wells, and well water is its own world: iron staining and sulfur smell
-            instead of chlorine taste. We treat wells across the region, and the
-            deepest local write-up lives on our Walker page.
+            Central and Baker get the same test-first treatment as Zachary. The rural
+            parts of northern East Baton Rouge Parish also hold private wells, and well
+            water is its own world: iron stains and a sulfur smell instead of chlorine
+            taste. We treat wells across the region, and the deepest local write-up
+            lives on our Walker page.
           </p>
           <p className="mt-4">
             <Link
@@ -198,7 +198,7 @@ export default function ZacharyFiltrationPage() {
       <Faq items={faqs} title="Zachary water filtration questions" />
       <CtaSection
         title="Get your Zachary water tested for free"
-        body="We test at your kitchen tap, show you the numbers on the spot, and tell you honestly what filtration would change and what it would not. The test is free either way."
+        body="We test at your kitchen tap and show you the numbers on the spot, so you know what is really in the water your family drinks and bathes in. You cannot see it in the glass, so the only way to know is to measure it. The test is free."
       />
     </>
   )

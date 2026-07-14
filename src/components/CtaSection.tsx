@@ -9,7 +9,7 @@ type CtaSectionProps = {
 // Split color block: white section holding a rounded splash-gradient card.
 export default function CtaSection({
   title = 'Find out what is actually in your water',
-  body = 'We test hardness, iron, chlorine, TDS, and pH at your own tap, show you the results on the spot, and give you a straight answer, even if that answer is that your water is fine. No charge, no obligation.',
+  body = 'We test your water right at your tap and show you exactly what is in it, on the spot. No charge, and no pressure to buy anything.',
 }: CtaSectionProps) {
   return (
     <section className="section-padding bg-white">

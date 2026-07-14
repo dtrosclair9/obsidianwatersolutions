@@ -27,15 +27,15 @@ export const metadata: Metadata = {
 const contactFaqs = [
   {
     q: 'How fast do you respond to a form submission?',
-    a: 'We aim to respond within one business day. Most people hear back from us by phone, so keep an eye out for a call from a local number after you submit. If your situation is urgent, calling us directly is the fastest path.',
+    a: 'We aim to respond within one business day. Most people hear back by phone, so watch for a call from a local number after you submit. In a hurry? Calling us direct is the fastest way to reach us.',
   },
   {
     q: 'Is the water test really free?',
-    a: 'Yes, completely free with no obligation attached. We test hardness, iron, chlorine, TDS, and pH at your tap and explain the results on the spot. If the numbers say your water is fine, that is the answer you get, and the visit costs you nothing either way.',
+    a: 'Yes, and there is no obligation. We test hardness, iron, chlorine, TDS, and pH at your tap and explain the results on the spot. We only recommend what your water needs, and the visit costs you nothing either way.',
   },
   {
     q: 'What should I have ready before the visit?',
-    a: 'Nothing. All we need is access to a tap, usually the kitchen sink, and a few minutes of your time to talk through the results. You do not need prior test results, plumbing knowledge, or any preparation.',
+    a: 'Nothing. We just need to reach a tap, usually the kitchen sink, and a few minutes to talk through the results. You do not need old test results, plumbing know-how, or any prep.',
   },
 ]
 
@@ -56,7 +56,7 @@ export default function ContactPage() {
       <JsonLd data={contactPageSchema} />
       <PageHero
         title="Book Your Free Water Test in Baton Rouge"
-        intro="Tell us a little about your water and we will take it from there. The test is free, happens at your own tap, and comes with a straight answer about whether your home needs treatment at all."
+        intro="Tell us a bit about your water and we will take it from there. The test is free and happens at your own tap. You get a straight answer on whether your home needs treatment at all."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'Contact', href: PATH },
@@ -81,8 +81,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold">We call you back</h3>
                   <p className="mt-1 text-sm leading-relaxed text-zinc-600">
-                    A real person from Obsidian follows up on your message, asks a
-                    couple of questions about your water, and answers yours.
+                    A real person from Obsidian follows up on your message. We ask a
+                    couple of questions about your water and answer any you have.
                   </p>
                 </div>
               </li>
@@ -93,9 +93,9 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold">We schedule the free test</h3>
                   <p className="mt-1 text-sm leading-relaxed text-zinc-600">
-                    We set a time that works for you and come to your home. The visit
-                    covers hardness, iron, chlorine, TDS, and pH
-                    measured at your tap, with the results explained face to face.
+                    We pick a time that works for you and come to your home. We test
+                    hardness, iron, chlorine, TDS, and pH at your tap. Then we explain
+                    the results face to face.
                   </p>
                 </div>
               </li>
@@ -107,8 +107,8 @@ export default function ContactPage() {
                   <h3 className="font-semibold">You get a straight answer</h3>
                   <p className="mt-1 text-sm leading-relaxed text-zinc-600">
                     If treatment makes sense, you get a quote matched to your results.
-                    If your water is fine, you get told exactly that, and we part as
-                    neighbors.
+                    If it does not, we tell you straight and part as neighbors. No
+                    pressure either way.
                   </p>
                 </div>
               </li>
@@ -143,7 +143,7 @@ export default function ContactPage() {
               <div>
                 <p className="font-semibold text-sm">Hours</p>
                 <p className="text-sm leading-relaxed text-zinc-600">
-                  Call or send the form any time; we respond quickly during business
+                  Call or send the form any time. We respond quickly during business
                   hours.
                 </p>
               </div>

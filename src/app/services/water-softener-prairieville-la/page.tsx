@@ -12,7 +12,7 @@ const PATH = '/services/water-softener-prairieville-la'
 export const metadata: Metadata = {
   title: { absolute: 'Water Softener Installation in Prairieville, LA' },
   description:
-    'Building or buying new in Prairieville? We finish pre-plumbed softener loops and protect tankless water heaters from scale. Free water test, free install.',
+    'Building or buying new in Prairieville? We finish the softener loop in your garage and stop scale from wrecking a tankless heater. Free test, free install.',
   alternates: { canonical: pageUrl(PATH) },
   openGraph: {
     title: 'Water Softener Installation in Prairieville, LA | Obsidian Water Solutions',
@@ -29,19 +29,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'My new build has a softener loop. What is that?',
-    a: 'A softener loop is a short section of pre-plumbed pipe, usually in the garage, that the builder roughed in so a water softener can be connected without cutting into your plumbing later. It is the cheapest, cleanest install point you will ever have. Connecting a softener to an existing loop is typically a quick single visit, and installation is free with the system.',
+    a: 'A softener loop is a short piece of pipe the builder roughed in, usually in the garage. It lets a water softener connect without cutting into your plumbing later. It is the cheapest, cleanest spot you will ever have to install one. Hooking a softener to a loop is usually a quick single visit, and installation is free with the system.',
   },
   {
     q: 'Do tankless water heaters really need a softener?',
-    a: 'Scale is the main enemy of a tankless water heater, because minerals bake onto the heat exchanger every time water passes through it. Many Prairieville new builds ship with tankless units standard, and a softener is the equipment that stops scale from forming in the first place rather than descaling after the fact. It protects the dishwasher, fixtures, and glass shower doors for the same reason.',
+    a: 'Scale is the main enemy of a tankless water heater. Every time water runs through it, minerals bake onto the heat exchanger. Many Prairieville new builds come with a tankless unit standard. A softener stops that scale from forming in the first place, instead of cleaning it out after the damage is done. It protects your dishwasher, fixtures, and glass shower doors the same way.',
   },
   {
     q: 'What does a water softener cost in Prairieville?',
-    a: 'The Complete Home Package, which pairs a softener with drinking-water filtration, lists at $4,599 installed, and package pricing can save up to 40% versus buying each system separately. A standalone softener costs less. We quote from your free in-home water test, so the system is sized to your actual hardness numbers, and installation is free either way.',
+    a: 'The Complete Home Package pairs a softener with drinking-water filtration for $4,599 installed. Package pricing can save up to 40% versus buying each system on its own. A softener by itself costs less. We quote from your free in-home water test, so it is sized to how hard your water really is, and installation is free either way.',
   },
   {
     q: 'Is installation different for new construction versus an older home?',
-    a: 'Only in the plumbing work involved. A new build with a softener loop is the fastest install we do, since the connection point already exists. A retrofit in an older Prairieville home means tying into the main line, which is routine work we handle in the same visit. Installation is free with the system in both cases, and we walk you through settings and salt before we leave.',
+    a: 'Only the plumbing part changes. A new build with a softener loop is the fastest install we do, because the connection point is already there. In an older Prairieville home we tie into the main line, which is routine work we do in the same visit. Installation is free with the system either way, and we walk you through the settings and salt before we leave.',
   },
 ]
 
@@ -69,7 +69,7 @@ export default function PrairievilleSoftenerPage() {
       <JsonLd data={serviceSchema} />
       <PageHero
         title="Water Softener Installation in Prairieville, Louisiana"
-        intro="Prairieville is where the Baton Rouge metro is building, and most of those new homes come with a tankless water heater and a pre-plumbed softener loop waiting in the garage. We finish the loop, size the softener to your water, and protect the new house from day one."
+        intro="Prairieville is where the Baton Rouge metro is building. Most of those new homes come with a tankless water heater and a softener loop already roughed into the garage. We finish that loop, size the softener to your water, and protect the new house from day one."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'Services', href: '/services' },
@@ -88,28 +88,26 @@ export default function PrairievilleSoftenerPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            Prairieville has grown faster than just about anywhere else in the metro,
-            and the subdivisions going in off Highway 42 and Highway 73 reflect it:
-            street after street of new construction, most of it plumbed with tankless
-            water heaters and rough-in softener loops. Builders include the loop
-            because they know the equipment belongs there. They just leave the
-            softener itself to you.
+            Prairieville has grown faster than almost anywhere in the metro. Drive the
+            new streets off Highway 42 and Highway 73 and you see it: subdivision after
+            subdivision of new homes. Most come with a tankless water heater and a
+            softener loop. Builders rough in the loop because they know the softener
+            belongs there. They just leave the softener itself to you.
           </p>
           <p className="mt-5 leading-relaxed text-zinc-600">
-            That makes the math simple for a new homeowner. The most expensive
-            appliances in the house, the tankless heater, the dishwasher, the washer,
-            are all brand new today, and scale is what ages them. A softener connected
-            at the loop means those appliances only ever see conditioned water. You
-            are not fixing a problem later. You are preventing it from the first
-            month in the house, which is when protection is worth the most.
+            That makes the choice easy for a new homeowner. Your most expensive
+            appliances, the tankless heater, the dishwasher, the washer, are all brand
+            new today. Scale is what wears them out. A softener on the loop means those
+            appliances only ever see soft water. You are not fixing a problem later.
+            You are stopping it in the first month, when protection is worth the most.
           </p>
           <p className="mt-5 leading-relaxed text-zinc-600">
-            Water sources in Ascension Parish are mixed. Most Prairieville
-            subdivisions sit on community systems such as Parish Utilities, while
-            homes toward the parish edges and older acreage lots can be on private
-            wells, where iron becomes part of the picture too. The free in-home test
-            measures your actual hardness and iron before we recommend anything, so
-            the system matches your address rather than an average.
+            Water in Ascension Parish is a mixed bag. Most Prairieville subdivisions
+            run on community systems like Parish Utilities. Homes near the parish edges
+            and older acreage lots can be on private wells, where iron shows up too.
+            The free in-home test measures how hard your water is and checks for iron
+            before we suggest anything. That way the system fits your address, not an
+            average.
           </p>
         </div>
       </section>
@@ -125,11 +123,11 @@ export default function PrairievilleSoftenerPage() {
             <span className="waterline mt-5" aria-hidden="true" />
             <ul className="mt-8 space-y-4">
               {[
-                'Free in-home water test: hardness, iron, chlorine, TDS, and pH',
-                'Softener loop hookup for new construction, main-line tie-in for retrofits',
-                'High-efficiency softeners sized to your household and test numbers',
-                'Scale protection for tankless water heaters, dishwashers, and fixtures',
-                'Free installation, typically one visit',
+                'Free in-home water test for iron, chlorine, and how hard the water is',
+                'Softener loop hookup for new homes, main-line tie-in for older ones',
+                'High-efficiency softener sized to your home and your test numbers',
+                'Scale protection for tankless heaters, dishwashers, and fixtures',
+                'Free installation, usually one visit',
                 'Lifetime warranty on your system, in writing',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -142,14 +140,14 @@ export default function PrairievilleSoftenerPage() {
               ))}
             </ul>
             <p className="mt-6 leading-relaxed text-zinc-600">
-              The full equipment rundown lives on our{' '}
+              The full gear rundown lives on our{' '}
               <Link
                 href="/services/water-softener-installation-baton-rouge-la"
                 className="text-primary font-semibold hover:text-primary-dark transition-colors"
               >
                 water softener installation
               </Link>{' '}
-              page. This page is about getting it into a Prairieville garage the
+              page. This page is about getting one into a Prairieville garage the
               week you close.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
@@ -178,11 +176,10 @@ export default function PrairievilleSoftenerPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            The same growth pattern runs down the corridor through Geismar and
-            Dutchtown, and we install softeners across all of it. In Gonzales the
-            water story shifts: homes split between two municipal providers and
-            private wells at the edges, which makes filtration the bigger
-            conversation there. That page covers it.
+            The same growth runs down the corridor through Geismar and Dutchtown, and
+            we install softeners across all of it. In Gonzales the water changes. Homes
+            there split between two city providers and private wells, so filtration is
+            the bigger question. That page covers it.
           </p>
           <p className="mt-4">
             <Link
@@ -198,7 +195,7 @@ export default function PrairievilleSoftenerPage() {
       <Faq items={faqs} title="Prairieville water softener questions" />
       <CtaSection
         title="Get your Prairieville water tested for free"
-        body="We test hardness at your tap, show you the numbers on the spot, and size the softener to what your water actually measures. New build or twenty years in, the test comes first."
+        body="We test how hard your water is right at your tap and show you the numbers on the spot. Then we size the softener to what your water actually measures. New build or twenty years in, the test comes first."
       />
     </>
   )

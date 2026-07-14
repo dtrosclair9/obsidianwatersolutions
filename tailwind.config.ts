@@ -31,7 +31,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-manrope)', 'sans-serif'],
-        serif: ['var(--font-fraunces)', 'Georgia', 'serif'],
+        serif: ['var(--font-spectral)', 'Georgia', 'serif'],
       },
       backgroundImage: {
         splash: 'linear-gradient(90deg, #7C3AED 0%, #2563EB 55%, #38BDF8 100%)',

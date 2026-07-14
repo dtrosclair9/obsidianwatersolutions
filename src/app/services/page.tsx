@@ -47,7 +47,7 @@ export default function ServicesIndexPage() {
       <JsonLd data={itemListSchema} />
       <PageHero
         title="Water Treatment Services in Baton Rouge"
-        intro="Whole-house filtration, water softeners, reverse osmosis drinking water, and well water treatment for the greater Baton Rouge area. Every one of them starts the same way: a free in-home water test and a straight answer about what your water actually needs."
+        intro="We handle whole-house filtration, water softeners, reverse osmosis drinking water, and well water treatment across the Baton Rouge area. Every job starts the same way. We test your water at home for free, then tell you straight what it needs."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'Services', href: PATH },
@@ -65,18 +65,17 @@ export default function ServicesIndexPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 text-lg leading-relaxed text-zinc-600">
-            Plenty of water companies lead with a product and work backwards to a
-            reason you need it. We do the opposite. Before anyone talks equipment, we
-            test your water at your own tap for hardness, iron, chlorine, TDS, and pH,
-            free of charge, and walk you through what the numbers mean. If your water
-            is fine, you will hear that from us plainly.
+            Most water companies lead with a product. Then they work backward to a
+            reason you need it. We do the opposite. First we test your water at your own
+            tap. We check hardness, iron, chlorine, TDS, and pH, all for free. Then we
+            walk you through what each number means. You only hear about a system your
+            water actually needs.
           </p>
           <p className="mt-5 text-lg leading-relaxed text-zinc-600">
-            When your water does need treatment, the test tells us which of the systems
-            below your home actually calls for. City water in Baton Rouge, harder
-            groundwater in the outlying parishes, and private wells around Walker and
-            Prairieville are three different problems, and they get three different
-            answers. That is the whole reason we test before we quote.
+            When your water does need help, the test shows which system fits. City water
+            in Baton Rouge is one problem. Harder groundwater out in the parishes is
+            another. Private wells around Walker and Prairieville are a third. Each one
+            needs a different fix. That is why we test before we quote.
           </p>
         </div>
       </section>
@@ -131,10 +130,11 @@ export default function ServicesIndexPage() {
               </h2>
               <span className="waterline mt-5" aria-hidden="true" />
               <p className="mt-6 text-lg leading-relaxed text-zinc-300">
-                A high-efficiency water softener, tankless reverse osmosis drinking
-                water, and alkaline filtration in one bundle for $4,599 installed.
-                Package pricing saves up to 40% versus buying each system separately,
-                installation is free, and the equipment carries a lifetime warranty.
+                You get a high-efficiency water softener, tankless reverse osmosis
+                drinking water, and alkaline filtration in one bundle. The price is
+                $4,599 installed. Buying each part on its own costs more, so the bundle
+                can save you up to 40%. Install is free, and the equipment carries a
+                lifetime warranty.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link href="/contact" className="btn-splash">
@@ -184,8 +184,8 @@ export default function ServicesIndexPage() {
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
             We install and service systems across East Baton Rouge, Livingston,
-            Ascension, and West Baton Rouge Parish. If you are in one of these
-            communities, we have a page written for your water specifically:
+            Ascension, and West Baton Rouge Parish. Live in one of these towns? We wrote
+            a page just for your water:
           </p>
           <ul className="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-3">
             {cityPages.map((c) => (
@@ -204,7 +204,7 @@ export default function ServicesIndexPage() {
 
       <CtaSection
         title="Not sure which system you need?"
-        body="That is exactly what the free water test is for. We test at your tap, explain the results on the spot, and tell you plainly which of these services fits your water, or whether you need any of them at all."
+        body="That is what the free water test is for. We test at your tap and explain the results on the spot. Then we tell you which of these services fits your water, and which ones you can skip."
       />
     </>
   )

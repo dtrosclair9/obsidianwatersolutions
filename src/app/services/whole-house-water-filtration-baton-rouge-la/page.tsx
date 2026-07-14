@@ -12,12 +12,12 @@ const PATH = '/services/whole-house-water-filtration-baton-rouge-la'
 export const metadata: Metadata = {
   title: { absolute: 'Whole House Water Filtration in Baton Rouge, LA' },
   description:
-    'One system at the main line filters every tap in the house. Chlorine taste and odor, sediment, and appliance protection for Baton Rouge homes. Free water test.',
+    'Bad taste or smell from chlorine? One filter at your main line cleans every tap in the house. For Baton Rouge homes, and the free water test comes first.',
   alternates: { canonical: pageUrl(PATH) },
   openGraph: {
     title: 'Whole House Water Filtration in Baton Rouge, LA | Obsidian Water Solutions',
     description:
-      'One system at the main line filters every tap in the house. Chlorine, sediment, and appliance protection for Baton Rouge homes. Free water test included.',
+      'Bad taste or smell from chlorine? One filter at your main line cleans every tap in the house. For Baton Rouge homes, and the free water test comes first.',
     url: pageUrl(PATH),
     siteName: site.name,
     images: [ogImage],
@@ -29,27 +29,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How much does whole house water filtration cost in Baton Rouge?',
-    a: 'Our Complete Home Package is $4,599 installed, and package pricing can save up to 40% compared to buying each piece separately. Installation is free with your system, and every quote starts with a free in-home water test so the equipment matches what is actually in your water. You will see the full number before anything is scheduled.',
+    a: 'Our Complete Home Package is $4,599 installed. Package pricing can save you up to 40% versus buying each piece apart. Installation is free with your system. And every quote starts with a free in-home water test, so the gear matches what is actually in your water. You see the full price before anything is scheduled.',
   },
   {
     q: 'What does a whole house filter actually remove?',
-    a: 'Chlorine taste and odor, sediment, and the grit that wears on plumbing and appliances. City water arrives disinfected with chlorine, which does its job in the pipes but has no business in your morning coffee or your shower steam. A carbon filtration stage at the main line pulls it out, while sediment filtration catches the fine particles that aging distribution lines can shed.',
+    a: 'It removes the chlorine taste and smell, grit, and the fine bits that wear on your plumbing and appliances. City water arrives with chlorine added to keep it safe in the pipes. That does its job in the pipes, but it has no place in your coffee or your shower. A carbon filter at your main line pulls the chlorine taste and smell out. A grit filter catches the fine particles that old pipes can shed.',
   },
   {
     q: 'Is Baton Rouge tap water safe to drink?',
-    a: 'Yes, and we will tell you that plainly. Baton Rouge draws from the Southern Hills Aquifer, deep groundwater that is genuinely good by any honest standard. Whole house filtration here is not about safety, it is about polish: removing the chlorine added for disinfection, catching sediment from the distribution system, and protecting your appliances for the long haul.',
+    a: 'The city cleans your water to meet the legal minimum, but the minimum is a floor, not a goal. Meeting a standard is not the same as reaching your glass clean. You cannot see the chlorine added to keep it safe. You cannot see the grit the old pipes shed. And you cannot see what your own older pipes add on the way to the tap. The only way to know what is really in your water is to test it. The in-home test is free.',
   },
   {
     q: 'What maintenance does a whole house system need?',
-    a: 'Very little, and we walk you through all of it at installation. Filtration media works for years before it needs attention, and sediment pre-filters are a simple periodic swap. Your system carries a lifetime warranty, and we remain a phone call away for questions or checkups after the install.',
+    a: 'Very little, and we walk you through all of it at the install. The filter lasts for years before it needs attention. The grit pre-filter is a simple swap now and then. Your system carries a lifetime warranty, and we are a phone call away for questions or checkups after.',
   },
   {
     q: 'How long does installation take?',
-    a: 'Most whole house systems are installed in a single visit, and we confirm the schedule with you when we quote the system. Installation is free and happens at your main water line, so every tap in the house is filtered once the equipment goes in.',
+    a: 'Most whole house systems go in on a single visit, and we set the schedule when we quote the system. Installation is free and happens at your main water line. So every tap in the house is filtered once the system is in.',
   },
   {
     q: 'Should I get a whole house filter or an under-sink filter?',
-    a: 'It depends on what you want filtered: one faucet or the whole home. An under-sink system such as reverse osmosis gives you exceptional drinking water at the kitchen sink, but it does nothing for showers, laundry, or the water heater. A whole house system treats every drop entering the home. Many Baton Rouge households run both: whole house filtration for the home, reverse osmosis for the glass.',
+    a: 'It depends on what you want to clean: one faucet, or the whole home. An under-sink system like reverse osmosis gives you great drinking water at the kitchen sink. But it does nothing for your showers, laundry, or water heater. A whole house filter cleans every drop that enters the home. Many Baton Rouge homes run both: a whole house filter for the home, and reverse osmosis for the glass.',
   },
 ]
 
@@ -78,7 +78,7 @@ export default function WholeHouseFiltrationPage() {
       <JsonLd data={serviceSchema} />
       <PageHero
         title="Whole House Water Filtration in Baton Rouge, Louisiana"
-        intro="One system at your main water line filters every tap, shower, and appliance in the house. Baton Rouge water is genuinely good, and whole house filtration is what takes it from good to the water you actually want: no chlorine taste, no sediment, no wear on the equipment you paid for."
+        intro="City water can reach your home with a chlorine smell, grit, and bits of metal from old pipes. You cannot see any of it in a clear glass. One filter at your main water line cleans every tap, shower, and appliance in the house. And the free water test shows you what is in yours first."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'Services', href: '/services' },
@@ -88,48 +88,50 @@ export default function WholeHouseFiltrationPage() {
         imageAlt="Black tank whole house water filtration system installed by Obsidian Water Solutions for a Baton Rouge home"
       />
 
-      {/* Honest framing: what filtration does for good city water */}
+      {/* What is still in your water after the city treats it */}
       <section className="section-padding bg-white">
         <div className="container-wide max-w-4xl">
-          <p className="section-label">The honest version</p>
+          <p className="section-label">What reaches your tap</p>
           <h2 className="text-3xl md:text-4xl font-semibold mt-3">
-            Baton Rouge water is good. Here is what filtration adds.
+            What is still in your water after the city treats it
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            You will not hear a scare pitch from us. East Baton Rouge city water comes
-            up from the Southern Hills Aquifer, deep natural groundwater that most of
-            the country would envy. What arrives at your tap is safe. It is also
-            chlorinated, because every municipal system disinfects its lines, and it
-            travels through miles of distribution pipe before it reaches your kitchen.
-            Whole house filtration exists for exactly those two realities.
+            The city cleans your water just enough to make it safe in the pipes. It
+            is not cleaned to taste good or to reach you untouched. To keep it safe,
+            the city adds chlorine, which leaves a taste and smell behind. From
+            there the water runs through miles of old public pipes. The last stretch
+            is the pipes inside your own home. You cannot see what it picks up along
+            the way. Whole house filtration is built for exactly that.
           </p>
           <div className="mt-10 space-y-8">
             <div>
-              <h3 className="text-xl font-semibold">Chlorine taste and odor, gone at every tap</h3>
+              <h3 className="text-xl font-semibold">Chlorine at every tap</h3>
               <p className="mt-3 leading-relaxed text-zinc-600">
-                Chlorine keeps water safe on its way to your house, but its work is
-                finished the moment it arrives. Activated carbon at the main line
-                removes the taste and smell before the water reaches your glass, your
-                coffee maker, or the steam in your shower.
+                The chlorine that keeps water safe in the pipes has no place in your
+                morning coffee or your shower steam. It carries a taste and smell
+                most homes want gone. A carbon filter at your main line pulls it out.
+                That means cleaner water for your glass, your coffee maker, and the
+                steam you breathe in the shower.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold">Sediment stopped before your plumbing</h3>
+              <h3 className="text-xl font-semibold">Grit and rust from old pipes</h3>
               <p className="mt-3 leading-relaxed text-zinc-600">
-                Older distribution lines and the occasional main break can push fine
-                grit into household plumbing, where it clogs aerators and settles in
-                water heaters. A sediment stage catches it at the point of entry
-                instead of inside your fixtures.
+                Old public pipes and the odd water-main break push fine grit into
+                your plumbing. It clogs faucet screens and settles in your water
+                heater. In older homes, the pipes on your own property can add to it.
+                A filter catches this grit where the water enters your home, not
+                inside your faucets.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold">Appliance protection that pays for itself</h3>
+              <h3 className="text-xl font-semibold">Longer life for your appliances</h3>
               <p className="mt-3 leading-relaxed text-zinc-600">
-                Water heaters, dishwashers, washing machines, and ice makers all live
-                longer on filtered water. Every one of those appliances costs real
-                money to replace, and every one of them runs on whatever comes through
-                the main line. Treat the line once and everything downstream benefits.
+                Your water heater, dishwasher, washing machine, and ice maker all
+                last longer on filtered water. Each one costs real money to replace.
+                And each one runs on whatever comes through your main line. Filter
+                the line once, and everything downstream is better off.
               </p>
             </div>
           </div>
@@ -141,43 +143,43 @@ export default function WholeHouseFiltrationPage() {
         <div className="container-wide max-w-4xl">
           <p className="section-label">Which one do you need</p>
           <h2 className="text-3xl md:text-4xl font-semibold mt-3">
-            Whole house filtration vs point-of-use filters
+            Whole-house filter or single-faucet filter?
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="rounded-3xl bg-white p-8 shadow-sm">
-              <h3 className="text-xl font-semibold">Whole house: treat everything once</h3>
+              <h3 className="text-xl font-semibold">Whole house: clean it all at once</h3>
               <p className="mt-3 leading-relaxed text-zinc-600">
-                Installed at the main line, a whole house system filters every drop
-                entering the home. Showers, laundry, the water heater, the garden hose
-                spigot the kids drink from in July: all of it. This is the right tool
-                for chlorine removal, sediment, and appliance protection, because those
-                problems affect the entire house, not one faucet.
+                A whole house filter goes in at your main line. It cleans every drop
+                that enters your home. Showers, laundry, the water heater, even the
+                garden hose the kids drink from in July. This is the right tool for
+                chlorine, grit, and appliance protection. Those problems hit the whole
+                house, not just one faucet.
               </p>
             </div>
             <div className="rounded-3xl bg-white p-8 shadow-sm">
-              <h3 className="text-xl font-semibold">Point-of-use: polish one tap</h3>
+              <h3 className="text-xl font-semibold">One faucet: polish the drinking water</h3>
               <p className="mt-3 leading-relaxed text-zinc-600">
-                Under-sink units such as a reverse osmosis system treat only the faucet
-                they are plumbed to, and they treat it to a higher standard than any
-                whole house filter can. The kitchen sink is where that standard matters:
-                drinking water, cooking, coffee. The two approaches are partners, not
-                rivals, and plenty of homes run both.
+                A filter under one sink, like reverse osmosis, cleans only that
+                faucet. But it cleans it to a higher level than any whole house filter
+                can. The kitchen sink is where that matters most: drinking, cooking,
+                and coffee. The two work as a team, not rivals, and plenty of homes
+                use both.
               </p>
             </div>
           </div>
           <p className="mt-8 leading-relaxed text-zinc-600">
-            Not sure which side of that line your home falls on? That is what the free
-            water test is for. We look at your actual water and your actual goals, then
-            recommend the smaller system if the smaller system is the right answer. You
-            can also read about our{' '}
+            Not sure which one your home needs? That is what the free water test is
+            for. We look at your real water and your real goals. Then we point you to
+            the smaller system if the smaller system is the right call. You can also
+            read about our{' '}
             <Link
               href="/services/reverse-osmosis-system-baton-rouge-la"
               className="text-primary font-semibold hover:text-primary-dark transition-colors"
             >
               reverse osmosis drinking water systems
             </Link>{' '}
-            to see how the point-of-use half works.
+            to see how the single-faucet side works.
           </p>
         </div>
       </section>
@@ -194,11 +196,11 @@ export default function WholeHouseFiltrationPage() {
             <ul className="mt-8 space-y-4">
               {[
                 'Free in-home water test before any quote',
-                'Carbon filtration sized to your home and flow rate',
-                'Sediment pre-filtration at the point of entry',
-                'Free professional installation at your main water line',
+                'A carbon filter sized to your home and water use',
+                'A grit filter where the water enters your home',
+                'Free professional install at your main water line',
                 'Lifetime warranty on your system, in writing',
-                'A walkthrough of the finished install and how to live with it',
+                'A walkthrough of the finished setup and how to care for it',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span
@@ -229,11 +231,11 @@ export default function WholeHouseFiltrationPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            We install whole house filtration across East Baton Rouge, Livingston,
-            Ascension, and West Baton Rouge parishes: Baton Rouge proper, Zachary,
-            Central, Baker, Port Allen, and the suburbs along both interstates. Some
-            of those communities have their own water stories worth reading, like
-            Denham Springs, where discolored water has made local news more than once.
+            We install whole house filters across four parishes: East Baton Rouge,
+            Livingston, Ascension, and West Baton Rouge. That covers Baton Rouge,
+            Zachary, Central, Baker, Port Allen, and the suburbs along both
+            interstates. Some of these towns have their own water stories, like
+            Denham Springs, where cloudy water has made local news more than once.
           </p>
           <p className="mt-4">
             <Link
@@ -266,8 +268,8 @@ export default function WholeHouseFiltrationPage() {
 
       <Faq items={faqs} title="Whole house filtration questions, answered" />
       <CtaSection
-        title="Find out what filtration would change at your tap"
-        body="The free in-home water test measures hardness, chlorine, iron, TDS, and pH at your own faucet. If whole house filtration would earn its keep in your home, we will show you why. If it would not, we will say so."
+        title="Find out what is really coming out of your tap"
+        body="The free in-home water test measures how hard your water is, plus chlorine, iron, and more, right at your faucet. You cannot see chlorine, grit, or what your own pipes add. The only way to know is to measure it. We bring the answer to your kitchen."
       />
     </>
   )

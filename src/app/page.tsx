@@ -31,55 +31,55 @@ export const metadata: Metadata = {
 
 const steps = [
   {
-    name: 'Free in-home water test',
-    text: 'We test your water at the tap for hardness, iron, chlorine, TDS, and pH, and walk you through the results on the spot. No lab wait, no guessing.',
+    name: 'Free water test at your home',
+    text: 'We test your water right at your tap for the stuff that causes bad taste, stains, and buildup. You see the results on the spot. No lab wait, no guessing.',
   },
   {
-    name: 'A system matched to your water',
-    text: 'City water in Baton Rouge needs different treatment than a well in Walker. We size and configure the system to what your test actually shows, not a one-size package.',
+    name: 'A system that fits your water',
+    text: 'City water in Baton Rouge is not the same as a well in Walker. We pick and size the system to fit what your test shows, not a one-size box.',
   },
   {
-    name: 'Professional installation',
-    text: 'Clean install at the main line or under the sink, free with your system. We test everything before we leave and show you how it works.',
+    name: 'Professional install',
+    text: 'We put the system in, free with your equipment. Then we test the water again before we leave and show you how everything works.',
   },
   {
-    name: 'Support after the install',
-    text: 'Filter changes, salt checks, and questions answered. When you call after the install, we answer. That is the part of this industry we set out to fix.',
+    name: 'We stick around after',
+    text: 'Filter changes, salt, a quick question: when you call after the install, we pick up. That is the part of this business we set out to fix.',
   },
 ]
 
 const homeFaqs = [
   {
     q: 'Is Baton Rouge tap water safe to drink?',
-    a: 'Baton Rouge city water is genuinely good by national standards. It comes from the Southern Hills Aquifer rather than a river, so it starts cleaner than most municipal supplies. The most common reasons Baton Rouge homeowners add filtration are chlorine taste and odor from disinfection, protecting appliances, and wanting higher-quality drinking water at the sink. If you are on a private well or in parts of Livingston Parish, the picture changes, and testing matters much more.',
+    a: 'Baton Rouge usually starts with better water than cities that pull from a river, because it comes from a deep aquifer. But passing a safety test is the floor, not the goal. The city still adds chlorine, and the water still runs through old pipes to reach your glass, including the pipes in your own home. On a well, no one checks it at all. The only way to know what is in your water is to test it, and that is free.',
   },
   {
     q: 'How much does a whole-house water filtration system cost in Baton Rouge?',
-    a: 'A complete home package with a water softener, tankless reverse osmosis, and alkaline filtration lists at $4,599 installed, and package savings can reach up to 40% versus buying each system separately. Individual systems cost less. Your free water test tells us exactly which equipment your home actually needs, so you never pay for treatment your water does not require.',
+    a: 'A full home package with a softener, tankless reverse osmosis, and an alkaline filter is $4,599 installed. Buying the pieces separately costs more, so the package can save you up to 40%. A single system costs less. Your free test shows which parts your home actually needs, so you pay for the right setup and nothing extra.',
   },
   {
     q: 'Do you install water treatment systems for well water?',
-    a: 'Yes. Well water treatment is one of our core specialties. Private wells in Livingston and Ascension Parish commonly carry iron, manganese, and hydrogen sulfide, which cause orange staining, metallic taste, and a rotten-egg smell. We treat all three with dedicated iron and sulfur removal systems built for well water, not repurposed city-water filters.',
+    a: 'Yes, and it is one of the main things we do. Wells in Livingston and Ascension Parish often carry iron, manganese, and sulfur. That means orange stains, a metal taste, and a rotten-egg smell. We fix all three with systems built for well water, not a city-water filter with a new label.',
   },
   {
     q: 'What is included in the free water test?',
-    a: 'The free test measures hardness, iron, chlorine, total dissolved solids, and pH at your tap, in your home, with the results explained face to face. There is no charge and no obligation. If your water is fine, we tell you that, because a company that only ever finds problems is not testing, it is selling.',
+    a: 'We test your tap for hardness, iron, chlorine, and more, right in your home, and walk you through what each number means. It is free, with no pressure to buy. You leave with straight answers and a clear plan for your water, not a sales script.',
   },
   {
     q: 'Why does my water smell like rotten eggs?',
-    a: 'A rotten-egg smell almost always means hydrogen sulfide gas in your water, which is common in private wells across Livingston and Ascension Parish. It is unpleasant rather than dangerous at typical levels, but it tarnishes fixtures and makes water unusable for coffee or cooking. A dedicated sulfur removal system with the right media eliminates the odor at every tap.',
+    a: 'That smell is sulfur gas in your water, and it is common in wells across Livingston and Ascension Parish. It is not usually dangerous, but it makes your water hard to live with and ruins coffee and cooking. The right system removes it, so the smell is gone at every faucet.',
   },
   {
     q: 'Do I need a water softener in Baton Rouge?',
-    a: 'Many Baton Rouge homes do not need aggressive softening, because aquifer water here is naturally softer than in most of the country. Where softeners earn their keep locally is protecting tankless water heaters from scale, improving soap performance, and treating homes in areas with harder groundwater. Your free test measures actual hardness in grains per gallon before anyone recommends equipment.',
+    a: 'If your dishes come out spotty, your fixtures crust over with white scale, your soap will not lather, or your skin feels dry after a shower, hard water is the usual cause. Scale also builds up inside water heaters and appliances and cuts their life short. Every home is different, so the free test measures how hard your water is and shows you what it is doing.',
   },
   {
     q: 'What is the difference between a water filter and a water softener?',
-    a: 'A filter removes contaminants such as chlorine, sediment, iron, and odors, while a softener specifically removes the calcium and magnesium minerals that cause scale. Many homes benefit from both working together, and some need only one. The right answer comes from testing your water, not from a sales script.',
+    a: 'A filter takes out things like chlorine, dirt, iron, and bad smells. A softener takes out the minerals that leave scale and spots. Some homes need both, and some need just one. The right answer comes from testing your water, not from a guess.',
   },
   {
     q: 'How long does installation take?',
-    a: 'Most systems go in on a single visit. We confirm the schedule with you when we quote the system, installation is free, and we test everything at the tap before we call the job complete.',
+    a: 'Most systems go in on a single visit. We set the schedule with you when we quote the job, the install is free, and we test the water at your tap before we call it done.',
   },
   {
     q: 'Do your systems come with a warranty?',
@@ -87,7 +87,7 @@ const homeFaqs = [
   },
   {
     q: 'What areas do you serve?',
-    a: 'We serve the greater Baton Rouge area, including Denham Springs, Prairieville, Walker, Gonzales, Zachary, Central, Baker, Port Allen, Watson, St. Amant, and Geismar, covering East Baton Rouge, Livingston, Ascension, and West Baton Rouge Parish.',
+    a: 'We serve the greater Baton Rouge area. That includes Denham Springs, Prairieville, Walker, Gonzales, Zachary, Central, Baker, Port Allen, Watson, St. Amant, and Geismar, across four parishes.',
   },
 ]
 
@@ -157,9 +157,9 @@ export default function HomePage() {
               </h1>
               <span className="waterline mt-6" aria-hidden="true" />
               <p className="mt-7 text-lg md:text-xl text-zinc-600 leading-relaxed max-w-xl">
-                Whole-house filtration, softeners, reverse osmosis, and well water
-                treatment, matched to what is actually in your water. Every project
-                starts with a free in-home water test and a straight answer.
+                Bad taste. Hard-water spots. Orange stains. That rotten-egg smell.
+                It all comes back to your water. We find out what is wrong with
+                yours and fix it, starting with a free test at your home.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
                 <Link href="/contact" className="btn-splash text-base">
@@ -187,28 +187,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Honest framing — the credibility wedge */}
+      {/* Problem-forward — what's in your water */}
       <section className="section-padding bg-mist">
         <div className="container-wide max-w-4xl">
-          <p className="section-label">The honest answer first</p>
+          <p className="section-label">What&apos;s in your water?</p>
           <h2 className="text-3xl md:text-4xl font-semibold mt-3">
-            Is Baton Rouge water actually bad?
+            You cannot see what is coming out of your tap. That is the problem.
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 text-lg leading-relaxed text-zinc-600">
-            No, and we will not pretend otherwise. Baton Rouge city water comes from the
-            Southern Hills Aquifer, not a river, and it is genuinely good by national
-            standards. If a water company opens the conversation by trying to scare you
-            about it, you have learned something about that company.
+            The city cleans your water just enough to pass a test. Then it runs
+            through miles of old public pipes to reach your street. The last stretch
+            is the pipes inside your own home. Along the way, water can pick up a
+            chlorine smell, grit, and even bits of metal from old pipes. It can look
+            perfectly clear and still carry all of that. You just cannot see it.
           </p>
           <p className="mt-5 text-lg leading-relaxed text-zinc-600">
-            Here is what is also true: chlorine disinfection affects taste and smell at
-            the tap. Scale shortens the life of tankless water heaters and appliances.
-            Parts of Livingston Parish deal with documented brown-water and iron
-            problems. And thousands of homes around Walker, Watson, Prairieville, and
-            St. Amant run on private wells where iron and sulfur are a daily fact of
-            life. Whether treatment makes sense for your home depends on your water,
-            which is why we test it for free before recommending anything.
+            If you are on a well, no one treats your water at all. Around Livingston
+            and Ascension Parish, well water often comes up full of iron and sulfur.
+            The iron stains sinks and laundry orange. The sulfur makes the whole
+            house smell like rotten eggs. City or well, there is one way to know what
+            is really in your water: test it. We do that for free.
           </p>
         </div>
       </section>
@@ -251,9 +250,9 @@ export default function HomePage() {
               <div>
                 <h3 className="text-xl font-semibold text-white">Complete Home Package</h3>
                 <p className="mt-3 text-sm leading-relaxed text-zinc-300">
-                  Softener, tankless reverse osmosis, and alkaline filtration together,
-                  installed free. Package pricing saves up to 40% versus buying each
-                  system separately.
+                  Softener, tankless reverse osmosis, and an alkaline filter, all
+                  installed free. Buying them separately costs more, so the package
+                  can save you up to 40%.
                 </p>
                 <p className="mt-4 text-2xl font-serif font-semibold text-white">$4,599 installed</p>
               </div>
@@ -275,11 +274,11 @@ export default function HomePage() {
             </h2>
             <span className="waterline mt-5" aria-hidden="true" />
             <p className="mt-7 text-lg leading-relaxed text-zinc-300">
-              Across Livingston and Ascension Parish, private wells pull water that is
-              heavy in iron, manganese, and hydrogen sulfide. It stains tubs orange,
-              ruins laundry, and makes the whole house smell like sulfur. City-water
-              filters do not fix it. Our dual-tank well systems with dedicated iron and
-              sulfur media are built for exactly this water.
+              Well water around Livingston and Ascension Parish is often full of iron
+              and sulfur. It stains your tub orange, ruins your laundry, and makes the
+              whole house smell like rotten eggs. A basic city-water filter will not
+              fix it. We build well systems made to pull the iron and sulfur out, so
+              your water runs clear and the smell is gone.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/services/well-water-treatment-baton-rouge-la" className="btn-splash">
@@ -337,25 +336,25 @@ export default function HomePage() {
             <div className="rounded-3xl bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">Water is all we do</h3>
               <p className="mt-3 leading-relaxed text-zinc-600 text-sm">
-                Around Baton Rouge, water treatment is usually a line item on a plumbing
-                or air-conditioning menu. For us it is the whole company. Testing,
-                sizing, installing, and supporting water systems is our entire job.
+                Around here, most companies treat water as a side job on a plumbing or
+                AC menu. For us, it is the whole business. Testing, sizing, installing,
+                and taking care of water systems is all we do.
               </p>
             </div>
             <div className="rounded-3xl bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">Test first, quote second</h3>
               <p className="mt-3 leading-relaxed text-zinc-600 text-sm">
-                Nobody should buy a $4,599 system because a brochure said to. We put
-                numbers from your own tap in front of you, explain what they mean, and
-                match equipment to the water you actually have.
+                Nobody should buy a $4,599 system because a brochure said so. We show
+                you the numbers from your own tap, explain what they mean in plain
+                terms, and match the system to your water.
               </p>
             </div>
             <div className="rounded-3xl bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">Here after the install</h3>
               <p className="mt-3 leading-relaxed text-zinc-600 text-sm">
-                The most common complaint about this industry is silence after the sale.
-                Filter changes, salt questions, a setting that needs adjusting: call us
-                and someone who knows your system answers.
+                The biggest complaint in this business is going quiet after the sale.
+                Need a filter change, have a salt question, or want a setting tweaked?
+                Call us, and someone who knows your system answers.
               </p>
             </div>
           </div>
@@ -372,11 +371,11 @@ export default function HomePage() {
             </h2>
             <span className="waterline mt-5" aria-hidden="true" />
             <p className="mt-7 leading-relaxed text-zinc-600">
-              We install and service water treatment systems across East Baton Rouge,
-              Livingston, Ascension, and West Baton Rouge Parish. That includes Baton
-              Rouge, Baker, Central, and Zachary; Denham Springs, Walker, and Watson;
-              Prairieville, Gonzales, St. Amant, and Geismar; and Port Allen across the
-              river.
+              We install and service water systems across four parishes: East Baton
+              Rouge, Livingston, Ascension, and West Baton Rouge. That covers Baton
+              Rouge, Baker, Central, and Zachary. It covers Denham Springs, Walker,
+              and Watson. And it covers Prairieville, Gonzales, St. Amant, Geismar,
+              and Port Allen.
             </p>
             <ul className="mt-7 grid grid-cols-1 sm:grid-cols-2 gap-3">
               {cityPages.map((c) => (

@@ -12,7 +12,7 @@ const PATH = '/services/water-filtration-denham-springs-la'
 export const metadata: Metadata = {
   title: { absolute: 'Water Filtration in Denham Springs, LA' },
   description:
-    'Tired of brown water in Denham Springs? Whole-house filtration that catches iron, manganese & sediment between advisories. Free water test, free install.',
+    'Brown water in Denham Springs? A whole-house filter catches the iron, rust, and grit before it hits your taps. Free water test, free install, lifetime warranty.',
   alternates: { canonical: pageUrl(PATH) },
   openGraph: {
     title: 'Water Filtration in Denham Springs, LA | Obsidian Water Solutions',
@@ -29,19 +29,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'Why does Denham Springs water turn brown sometimes?',
-    a: 'The discoloration comes from iron and manganese in parts of the parish water systems, plus sediment that gets stirred up when lines break, hydrants get flushed, or pressure changes. Local TV news has covered brown-water complaints in Denham Springs for years, and parts of Livingston Parish have seen boil advisories, including one in the Juban Road area in December 2024. None of that is your plumbing failing. It is what arrives at your meter on a bad day.',
+    a: 'The brown color comes from iron and manganese in parts of the parish water systems. Grit gets stirred up too, when a line breaks, a hydrant gets flushed, or the pressure changes. Local TV news has covered brown-water complaints in Denham Springs for years. Parts of Livingston Parish have also had boil advisories, including one near Juban Road in December 2024. None of that is your own plumbing failing. It is what shows up at your meter on a bad day.',
   },
   {
     q: 'Will a filter actually fix brown water?',
-    a: 'Yes. A whole-house system with sediment and iron filtration at the main line catches discoloration before it reaches your fixtures, laundry, and water heater. It cannot repair the distribution lines themselves, so an honest framing is insurance: on the days the supply runs dirty, your house does not. Every tap in the home stays clear because the filtration sits where the water comes in, not under one sink.',
+    a: 'Yes. A whole-house system filters grit and iron right where the water enters your home. It catches the brown color before it reaches your faucets, laundry, and water heater. It cannot fix the city pipes themselves, so think of it as insurance. On the days the supply runs dirty, your house does not. Every tap stays clear because the filter sits at the main line, not under one sink.',
   },
   {
     q: 'What does a filtration system cost in Denham Springs?',
-    a: 'The Complete Home Package lists at $4,599 installed, and package pricing can save up to 40% versus buying each system separately. Many Denham Springs homes need less than the full package, which is why the free in-home water test comes first: we quote the individual system your water actually calls for, and installation is free either way.',
+    a: 'The Complete Home Package is $4,599 installed. Buying each system on its own costs more, so the package can save you up to 40%. Many Denham Springs homes need less than the full package. That is why the free in-home water test comes first. We quote the one system your water actually needs, and installation is free either way.',
   },
   {
     q: 'Do you serve all of Livingston Parish?',
-    a: 'Yes. Denham Springs, Watson, Walker, Holden, and the roads between them are all core service area. Homes on municipal water usually need filtration like the systems on this page, while well homes toward Watson and Walker usually need iron and sulfur treatment instead. The free water test settles which category your house is in before anyone quotes equipment.',
+    a: 'Yes. Denham Springs, Watson, Walker, Holden, and the roads between them are all core service area. Homes on city water usually need a filter like the ones on this page. Well homes toward Watson and Walker usually need iron and sulfur treatment instead. The free water test settles which type your home is before anyone quotes gear.',
   },
 ]
 
@@ -68,7 +68,7 @@ export default function DenhamSpringsFiltrationPage() {
       <JsonLd data={serviceSchema} />
       <PageHero
         title="Water Filtration in Denham Springs, Louisiana"
-        intro="If your water has ever run brown, you already know why this page exists. Whole-house filtration at the main line catches the iron, manganese, and sediment Denham Springs homes see on bad days, so what reaches your taps stays clear."
+        intro="Has your tap water ever run brown? Then you know why this page is here. A whole-house filter sits where the water enters your home. It catches the iron, rust, and grit that Denham Springs homes see on bad days, so what comes out of your taps stays clear."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'Services', href: '/services' },
@@ -87,28 +87,29 @@ export default function DenhamSpringsFiltrationPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            Denham Springs residents have been photographing discolored tap water for
-            local news crews for years, and the coverage is easy to find. Parts of the
-            parish&apos;s water systems have documented iron and manganese issues, and
-            Livingston Parish has seen boil advisories, including one in the Juban Road
-            area in December 2024. When a line breaks or a hydrant gets flushed, the
-            sediment sitting in those mains ends up in somebody&apos;s laundry.
+            For years, Denham Springs folks have taken photos of brown tap water for
+            the local news. That coverage is easy to find. Parts of the parish water
+            systems have known iron and manganese problems. Those are the two minerals
+            that stain water brown. Livingston Parish has also had boil advisories,
+            including one near Juban Road in December 2024. When a line breaks or a
+            hydrant gets flushed, the grit sitting in those pipes ends up in
+            someone&apos;s laundry.
           </p>
           <p className="mt-5 leading-relaxed text-zinc-600">
-            We are not here to tell you your water is dangerous. It is treated and
-            monitored, and most days it runs clear. But if you have ever filled a tub
-            the color of tea, rewashed a load of whites, or wondered whether today is
-            a good day to make ice, you know that &quot;most days&quot; is not the
-            same as every day. That gap is exactly what whole-house filtration closes.
+            We are not here to tell you your water is dangerous. It gets treated and
+            checked. Most days it runs clear. But most days is not every day. Maybe
+            you have filled a tub the color of tea. Maybe you have washed a load of
+            whites twice. Maybe you have wondered if today is a bad day to make ice.
+            If so, you feel that gap. A whole-house filter is what closes it.
           </p>
           <p className="mt-5 leading-relaxed text-zinc-600">
-            A system at your main line filters everything entering the house: sediment
-            before it settles in your water heater, iron and manganese before they
-            stain fixtures, and chlorine taste and odor at every tap. The growth
-            corridor out toward Juban Crossing and Watson also holds plenty of homes
-            on private wells rather than the municipal system. Those homes usually
-            need well treatment instead, and the free water test tells you which side
-            of that line your house is on.
+            A filter at your main line cleans every drop coming into the house. It
+            catches grit before it settles in your water heater. It pulls out iron and
+            manganese before they stain your sinks and tub. And it takes the chlorine
+            taste and smell out of every tap. Out toward Juban Crossing and Watson, a
+            lot of homes run on private wells instead of city water. Those homes
+            usually need well treatment, and the free test tells you which kind of
+            home you have.
           </p>
         </div>
       </section>
@@ -124,11 +125,11 @@ export default function DenhamSpringsFiltrationPage() {
             <span className="waterline mt-5" aria-hidden="true" />
             <ul className="mt-8 space-y-4">
               {[
-                'Free in-home water test: iron, hardness, chlorine, TDS, and pH at your tap',
-                'Sediment filtration at the main line that catches line-break surges before they reach fixtures',
-                'Iron and manganese reduction to stop orange and dark staining',
-                'Carbon filtration for chlorine taste and odor at every faucet and shower',
-                'Free installation, typically one visit',
+                'Free in-home water test for iron, chlorine, and how hard the water is, right at your tap',
+                'Grit filter at the main line that catches the surge when a water line breaks',
+                'Iron and manganese removal to stop orange and dark stains',
+                'Carbon filter that takes chlorine taste and smell out of every faucet and shower',
+                'Free installation, usually one visit',
                 'Lifetime warranty on your system, in writing',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -141,7 +142,7 @@ export default function DenhamSpringsFiltrationPage() {
               ))}
             </ul>
             <p className="mt-6 leading-relaxed text-zinc-600">
-              The same equipment is covered in depth on our{' '}
+              The same gear is covered in more detail on our{' '}
               <Link
                 href="/services/whole-house-water-filtration-baton-rouge-la"
                 className="text-primary font-semibold hover:text-primary-dark transition-colors"
@@ -176,11 +177,10 @@ export default function DenhamSpringsFiltrationPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">
-            Filtration handles municipal water. Head toward Watson, Walker, or Holden
-            and the picture changes: a large share of those homes draw from private
-            wells, where the problem is iron and sulfur coming out of the ground
-            rather than sediment coming down a main. That calls for different
-            equipment, and it has its own page.
+            A filter handles city water. Head toward Watson, Walker, or Holden and it
+            changes. A lot of those homes pull from private wells. There the problem
+            is iron and sulfur coming up from the ground, not grit coming down a city
+            pipe. That needs different gear, and it has its own page.
           </p>
           <p className="mt-4">
             <Link
@@ -196,7 +196,7 @@ export default function DenhamSpringsFiltrationPage() {
       <Faq items={faqs} title="Denham Springs water filtration questions" />
       <CtaSection
         title="Get your Denham Springs water tested for free"
-        body="We test at your tap, show you the numbers on the spot, and give you a straight answer about what filtration would and would not change. If your water is fine, you will hear that too."
+        body="We test right at your tap and show you the numbers on the spot. Then we give you a straight answer about what a filter would and would not change. No pressure, no sales script."
       />
     </>
   )

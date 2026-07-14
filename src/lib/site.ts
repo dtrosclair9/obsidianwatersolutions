@@ -62,7 +62,7 @@ export const services: Service[] = [
     name: 'Whole-House Water Filtration',
     navLabel: 'Whole-House Water Filtration',
     short:
-      'One system at the main line filters every tap, shower, and appliance in the house: chlorine, sediment, taste, and odor.',
+      'One system on your main line cleans up every tap, shower, and appliance: chlorine smell, grit, and bad taste.',
     image: '/images/service-whole-house.jpg',
     imageAlt:
       'Obsidian Water Solutions whole house water filtration tank system for Baton Rouge homes',
@@ -72,7 +72,7 @@ export const services: Service[] = [
     name: 'Water Softener Installation',
     navLabel: 'Water Softeners',
     short:
-      'High-efficiency softeners that stop scale buildup in tankless heaters, plumbing, and fixtures, sized to your home and your water.',
+      'Stops the white scale that spots your dishes, dries out your skin, and wears out your water heater.',
     image: '/images/service-softener.jpg',
     imageAlt:
       'Obsidian Water Solutions water softener and brine tank installed for a Baton Rouge area home',
@@ -82,7 +82,7 @@ export const services: Service[] = [
     name: 'Reverse Osmosis Drinking Water',
     navLabel: 'Reverse Osmosis Drinking Water',
     short:
-      'Tankless reverse osmosis at the kitchen sink: bottled-water quality drinking water without the bottles.',
+      'Clean, great-tasting drinking water straight from your kitchen tap. No more hauling bottles.',
     image: '/images/service-ro.jpg',
     imageAlt:
       'Tankless reverse osmosis drinking water system on a kitchen counter in Baton Rouge Louisiana',
@@ -92,7 +92,7 @@ export const services: Service[] = [
     name: 'Well Water Treatment',
     navLabel: 'Well Water Treatment',
     short:
-      'Iron, sulfur, and sediment removal for private wells. The rotten-egg smell and orange staining end here.',
+      'Gets the iron, sulfur, and grit out of well water. The orange stains and rotten-egg smell are gone.',
     image: '/images/service-well.jpg',
     imageAlt:
       'Dual tank well water treatment system for iron and sulfur removal in Livingston and Ascension Parish',
@@ -102,7 +102,7 @@ export const services: Service[] = [
     name: 'Free Water Testing',
     navLabel: 'Free Water Testing',
     short:
-      'A free in-home water test that shows you exactly what is in your water: hardness, iron, chlorine, TDS, and pH, before you spend a dollar.',
+      'A free test at your home that shows you exactly what is in your water before you spend a dollar.',
     image: '/images/service-testing.jpg',
     imageAlt:
       'Obsidian Water Solutions free in-home water testing kit with sample vials and TDS meter',
