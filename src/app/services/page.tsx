@@ -9,7 +9,7 @@ import { BASE_URL, ogImage, pageUrl, site, services, cityPages } from '@/lib/sit
 const PATH = '/services'
 
 export const metadata: Metadata = {
-  title: 'Water Treatment Services in Baton Rouge, LA',
+  title: { absolute: 'Water Treatment Services in Baton Rouge, LA' },
   description:
     'Whole-house water filtration, softeners, reverse osmosis, well water treatment & free testing for the Baton Rouge area. Complete package $4,599 installed.',
   alternates: { canonical: pageUrl(PATH) },

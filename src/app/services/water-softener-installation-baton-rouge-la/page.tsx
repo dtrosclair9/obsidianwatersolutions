@@ -10,7 +10,7 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/services/water-softener-installation-baton-rouge-la'
 
 export const metadata: Metadata = {
-  title: 'Water Softener Installation in Baton Rouge, LA',
+  title: { absolute: 'Water Softener Installation in Baton Rouge, LA' },
   description:
     'Water softener installation for Baton Rouge area homes: scale protection for tankless water heaters, better soap performance, honest sizing. Free water test.',
   alternates: { canonical: pageUrl(PATH) },
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: 'How long does installation take?',
-    a: 'Most softener installations are finished in one visit, and homes with a pre-plumbed softener loop go even smoother. We confirm scheduling when we quote the system. Installation is free, handled by our own team, and includes setting the valve programming to your tested hardness before we leave.',
+    a: 'Most softener installations are finished in one visit, and homes with a pre-plumbed softener loop go even smoother. We confirm scheduling when we quote the system. Installation is free, and it includes setting the valve programming to your tested hardness before we leave.',
   },
   {
     q: 'What is the difference between a softener and a salt-free conditioner?',

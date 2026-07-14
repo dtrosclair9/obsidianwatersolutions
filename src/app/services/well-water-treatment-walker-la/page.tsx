@@ -10,9 +10,9 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/services/well-water-treatment-walker-la'
 
 export const metadata: Metadata = {
-  title: 'Well Water Treatment in Walker, LA',
+  title: { absolute: 'Well Water Treatment in Walker, LA | Iron & Sulfur' },
   description:
-    'Iron & sulfur removal for private wells in Walker, Watson & Holden. Free well water testing, dual-tank systems, free installation. Livingston Parish well specialists.',
+    'Iron & sulfur removal for private wells in Walker, Watson & Holden. Free well water testing, dual-tank systems, free installation in Livingston Parish.',
   alternates: { canonical: pageUrl(PATH) },
   openGraph: {
     title: 'Well Water Treatment in Walker, LA | Obsidian Water Solutions',
@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: 'How fast can a well system be installed in Walker?',
-    a: 'Once your test is done and the system is spec’d, installation is typically a single visit of a few hours at your well line. Installation is free with the system, and we verify iron and sulfur at the tap before we leave.',
+    a: 'Once your test is done and the system is specified, installation is typically a single visit at your well line. Installation is free with the system, and we verify iron and sulfur at the tap before we leave.',
   },
 ]
 

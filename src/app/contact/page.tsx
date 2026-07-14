@@ -8,7 +8,7 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/contact'
 
 export const metadata: Metadata = {
-  title: 'Book Your Free Water Test in Baton Rouge, LA',
+  title: { absolute: 'Book a Free Water Test | Baton Rouge, LA' },
   description:
     'Book a free in-home water test in the Baton Rouge area. Call (985) 227-2591 or send the form and we will schedule your 30-minute visit. No obligation.',
   alternates: { canonical: pageUrl(PATH) },
@@ -56,7 +56,7 @@ export default function ContactPage() {
       <JsonLd data={contactPageSchema} />
       <PageHero
         title="Book Your Free Water Test in Baton Rouge"
-        intro="Tell us a little about your water and we will take it from there. The test is free, takes about 30 minutes at your tap, and comes with a straight answer about whether your home needs treatment at all."
+        intro="Tell us a little about your water and we will take it from there. The test is free, happens at your own tap, and comes with a straight answer about whether your home needs treatment at all."
         crumbs={[
           { name: 'Home', href: '/' },
           { name: 'Contact', href: PATH },
@@ -94,7 +94,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold">We schedule the free test</h3>
                   <p className="mt-1 text-sm leading-relaxed text-zinc-600">
                     We set a time that works for you and come to your home. The visit
-                    takes about 30 minutes: hardness, iron, chlorine, TDS, and pH
+                    covers hardness, iron, chlorine, TDS, and pH
                     measured at your tap, with the results explained face to face.
                   </p>
                 </div>

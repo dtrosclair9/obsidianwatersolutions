@@ -10,9 +10,9 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/services/well-water-treatment-baton-rouge-la'
 
 export const metadata: Metadata = {
-  title: 'Well Water Treatment in Baton Rouge, LA',
+  title: { absolute: 'Well Water Treatment in Baton Rouge, LA | Iron & Sulfur' },
   description:
-    'Iron, sulfur & sediment removal for private wells in Livingston, Ascension & the Baton Rouge area. Dual-tank well systems, free water testing, free installation.',
+    'Iron, sulfur & sediment removal for private wells in Livingston, Ascension & the Baton Rouge area. Dual-tank systems, free testing, free installation.',
   alternates: { canonical: pageUrl(PATH) },
   openGraph: {
     title: 'Well Water Treatment in Baton Rouge, LA | Obsidian Water Solutions',

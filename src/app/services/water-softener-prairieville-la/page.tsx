@@ -10,7 +10,7 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/services/water-softener-prairieville-la'
 
 export const metadata: Metadata = {
-  title: 'Water Softener Installation in Prairieville, LA | New Builds',
+  title: { absolute: 'Water Softener Installation in Prairieville, LA' },
   description:
     'Building or buying new in Prairieville? We finish pre-plumbed softener loops and protect tankless water heaters from scale. Free water test, free install.',
   alternates: { canonical: pageUrl(PATH) },

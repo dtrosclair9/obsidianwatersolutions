@@ -10,7 +10,7 @@ import { BASE_URL, ogImage, pageUrl, site, cityPages } from '@/lib/site'
 const PATH = '/about'
 
 export const metadata: Metadata = {
-  title: 'About Our Baton Rouge Water Treatment Company',
+  title: { absolute: 'About Obsidian Water Solutions | Baton Rouge, LA' },
   description:
     'Obsidian Water Solutions is a Baton Rouge water treatment specialist. Free water testing, systems matched to your water & support after every install.',
   alternates: { canonical: pageUrl(PATH) },

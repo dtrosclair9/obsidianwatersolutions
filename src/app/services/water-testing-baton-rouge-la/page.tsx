@@ -10,7 +10,7 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/services/water-testing-baton-rouge-la'
 
 export const metadata: Metadata = {
-  title: 'Free In-Home Water Testing in Baton Rouge, Louisiana',
+  title: { absolute: 'Free In-Home Water Testing in Baton Rouge, LA' },
   description:
     'Free in-home water testing across the Baton Rouge area. Hardness, iron, chlorine, TDS, and pH tested at your tap, results explained on the spot. No obligation.',
   alternates: { canonical: pageUrl(PATH) },
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'How long does the water test take?',
-    a: 'Plan for about 30 minutes. We test at your tap, walk you through each result as it develops, and answer whatever questions come up. There is no presentation, no projector, and no reason for it to eat your evening.',
+    a: 'It is a short visit, not an evening. We test at your tap, walk you through each result as it develops, and answer whatever questions come up. There is no presentation, no projector, and no pressure to buy anything.',
   },
   {
     q: 'What do you test for?',

@@ -10,7 +10,7 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/services/water-filtration-zachary-la'
 
 export const metadata: Metadata = {
-  title: 'Water Filtration in Zachary, LA | Drinking Water & RO',
+  title: { absolute: 'Water Filtration in Zachary, LA | Drinking Water' },
   description:
     'Zachary tap water is solid. Filtration makes it yours: reverse osmosis at the sink for the kids, chlorine-free taste, appliance protection. Free water test.',
   alternates: { canonical: pageUrl(PATH) },

@@ -10,7 +10,7 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/services/water-filtration-gonzales-la'
 
 export const metadata: Metadata = {
-  title: 'Water Filtration in Gonzales, LA | City Water & Wells',
+  title: { absolute: 'Water Filtration in Gonzales, LA | City & Well Water' },
   description:
     'Gonzales homes split between two utilities and private wells. Honest whole-house filtration for chlorine taste, iron & well water. Free test, free install.',
   alternates: { canonical: pageUrl(PATH) },

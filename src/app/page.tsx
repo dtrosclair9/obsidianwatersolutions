@@ -7,10 +7,16 @@ import CtaSection from '@/components/CtaSection'
 import { BASE_URL, ogImage, site, services, cityPages } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Obsidian Water Solutions | Water Filtration in Baton Rouge, LA',
+  title: 'Water Filtration in Baton Rouge, LA | Obsidian Water',
   description:
     'Whole-house filtration, water softeners, reverse osmosis & well water treatment for the Baton Rouge area. Start with a free in-home water test.',
   alternates: { canonical: BASE_URL },
+  other: {
+    'geo.region': 'US-LA',
+    'geo.placename': 'Baton Rouge',
+    'geo.position': `${site.geo.lat};${site.geo.lng}`,
+    ICBM: `${site.geo.lat}, ${site.geo.lng}`,
+  },
   openGraph: {
     title: 'Obsidian Water Solutions | Water Filtration in Baton Rouge, LA',
     description:
@@ -26,7 +32,7 @@ export const metadata: Metadata = {
 const steps = [
   {
     name: 'Free in-home water test',
-    text: 'We test your water at the tap for hardness, iron, chlorine, TDS, and pH, and walk you through the results on the spot. It takes about 30 minutes.',
+    text: 'We test your water at the tap for hardness, iron, chlorine, TDS, and pH, and walk you through the results on the spot. No lab wait, no guessing.',
   },
   {
     name: 'A system matched to your water',
@@ -73,7 +79,7 @@ const homeFaqs = [
   },
   {
     q: 'How long does installation take?',
-    a: 'Most whole-house systems install in a single visit of a few hours, and under-sink reverse osmosis systems typically take one to two hours. Installation is free with your system, and we test everything at the tap before we call the job complete.',
+    a: 'Most systems go in on a single visit. We confirm the schedule with you when we quote the system, installation is free, and we test everything at the tap before we call the job complete.',
   },
   {
     q: 'Do your systems come with a warranty?',

@@ -10,7 +10,7 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/services/reverse-osmosis-system-baton-rouge-la'
 
 export const metadata: Metadata = {
-  title: 'Reverse Osmosis Drinking Water Systems in Baton Rouge, LA',
+  title: { absolute: 'Reverse Osmosis Water Systems in Baton Rouge, LA' },
   description:
     'Tankless reverse osmosis systems installed at your kitchen sink in Baton Rouge. Bottled-water quality without the bottles, with an alkaline stage option.',
   alternates: { canonical: pageUrl(PATH) },

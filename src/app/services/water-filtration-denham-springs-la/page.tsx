@@ -10,7 +10,7 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/services/water-filtration-denham-springs-la'
 
 export const metadata: Metadata = {
-  title: 'Water Filtration in Denham Springs, LA | Brown Water Fix',
+  title: { absolute: 'Water Filtration in Denham Springs, LA' },
   description:
     'Tired of brown water in Denham Springs? Whole-house filtration that catches iron, manganese & sediment between advisories. Free water test, free install.',
   alternates: { canonical: pageUrl(PATH) },

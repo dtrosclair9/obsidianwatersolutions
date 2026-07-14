@@ -10,7 +10,7 @@ import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
 const PATH = '/services/whole-house-water-filtration-baton-rouge-la'
 
 export const metadata: Metadata = {
-  title: 'Whole House Water Filtration in Baton Rouge, LA',
+  title: { absolute: 'Whole House Water Filtration in Baton Rouge, LA' },
   description:
     'One system at the main line filters every tap in the house. Chlorine taste and odor, sediment, and appliance protection for Baton Rouge homes. Free water test.',
   alternates: { canonical: pageUrl(PATH) },
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: 'How long does installation take?',
-    a: 'Most whole house systems are installed in a single visit, and we confirm the schedule with you when we quote the system. Installation is free and handled by our own team at your main water line, so every tap in the house is filtered the same day the equipment goes in.',
+    a: 'Most whole house systems are installed in a single visit, and we confirm the schedule with you when we quote the system. Installation is free and happens at your main water line, so every tap in the house is filtered once the equipment goes in.',
   },
   {
     q: 'Should I get a whole house filter or an under-sink filter?',
