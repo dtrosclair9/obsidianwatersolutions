@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-ink;
+  }
+
+  /* Visible keyboard focus indicator (WCAG 2.4.7 / 2.4.11). */
+  :focus-visible {
+    outline: 2px solid theme('colors.accent.dark');
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Skip-to-content link: hidden until keyboard-focused (WCAG 2.4.1). */
+  .skip-link {
+    @apply sr-only;
+  }
+  .skip-link:focus {
+    @apply not-sr-only fixed top-4 left-4 z-[100] bg-ink text-white font-semibold px-5 py-3 rounded-lg shadow-lg;
+  }
+
+  .btn-splash {
+    @apply bg-splash text-white font-semibold px-6 py-3 rounded-full transition-opacity duration-200 inline-block hover:opacity-90;
+  }
+
+  .btn-ink {
+    @apply bg-ink text-white font-semibold px-6 py-3 rounded-full transition-colors duration-200 inline-block hover:bg-ink-soft;
+  }
+
+  .btn-outline-ink {
+    @apply border-2 border-ink text-ink font-semibold px-6 py-3 rounded-full transition-colors duration-200 inline-block hover:bg-ink hover:text-white;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-label {
+    @apply text-primary uppercase tracking-widest text-sm font-semibold font-sans;
+  }
+
+  /* The signature: the logo's splash as a thin waterline under headings. */
+  .waterline {
+    @apply block h-1.5 w-24 rounded-full bg-splash;
+  }
+  .waterline--center {
+    @apply mx-auto;
+  }
+}

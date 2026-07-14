@@ -1,0 +1,277 @@
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import JsonLd from '@/components/JsonLd'
+import PageHero from '@/components/PageHero'
+import Faq from '@/components/Faq'
+import CtaSection from '@/components/CtaSection'
+import { BASE_URL, ogImage, pageUrl, site } from '@/lib/site'
+
+const PATH = '/services/water-testing-baton-rouge-la'
+
+export const metadata: Metadata = {
+  title: 'Free In-Home Water Testing in Baton Rouge, Louisiana',
+  description:
+    'Free in-home water testing across the Baton Rouge area. Hardness, iron, chlorine, TDS, and pH tested at your tap, results explained on the spot. No obligation.',
+  alternates: { canonical: pageUrl(PATH) },
+  openGraph: {
+    title: 'Free In-Home Water Testing in Baton Rouge, LA | Obsidian Water Solutions',
+    description:
+      'Free in-home water testing for hardness, iron, chlorine, TDS, and pH anywhere in the greater Baton Rouge area. Results explained on the spot, no obligation.',
+    url: pageUrl(PATH),
+    siteName: site.name,
+    images: [ogImage],
+    locale: 'en_US',
+    type: 'website',
+  },
+}
+
+const faqs = [
+  {
+    q: 'Is the water test really free?',
+    a: 'Yes, completely free and with no obligation attached. The visit costs you nothing whether you buy a system or never call us again. Testing is how we build honest quotes, because sizing equipment without a water test is guessing, and we would rather earn the install with a number you watched us measure at your own tap.',
+  },
+  {
+    q: 'How long does the water test take?',
+    a: 'Plan for about 30 minutes. We test at your tap, walk you through each result as it develops, and answer whatever questions come up. There is no presentation, no projector, and no reason for it to eat your evening.',
+  },
+  {
+    q: 'What do you test for?',
+    a: 'Hardness, iron, chlorine, total dissolved solids, and pH, measured right at your faucet. Together those five readings tell the story of your water: whether scale is building in your tankless heater, whether chlorine is what you are tasting, whether iron explains the staining, and how your water compares to what a treatment system would deliver.',
+  },
+  {
+    q: 'Do I need a water test if I am on city water?',
+    a: 'It depends on what you want to know. Baton Rouge city water is genuinely good, so the test is less about safety and more about specifics: your actual chlorine level, whether your neighborhood runs harder than the aquifer average, and a baseline TDS number before you invest in drinking water equipment. If the results say you need nothing, that is exactly what we will tell you.',
+  },
+  {
+    q: 'How often should well owners retest their water?',
+    a: 'Every couple of years, even when everything seems fine. A private well has no utility watching it, and groundwater changes: iron and sulfur levels can drift, and a new smell or stain is always worth a fresh test rather than a guess. Retesting is free too, so there is no reason to wonder.',
+  },
+]
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': `${pageUrl(PATH)}#service`,
+  name: 'Free In-Home Water Testing',
+  serviceType: 'Free in-home water quality testing',
+  description:
+    'Free in-home water testing measuring hardness, iron, chlorine, TDS, and pH for city water and private well homes across the greater Baton Rouge area.',
+  url: pageUrl(PATH),
+  provider: { '@id': `${BASE_URL}/#business` },
+  areaServed: [
+    { '@type': 'City', name: 'Baton Rouge, LA' },
+    { '@type': 'City', name: 'Denham Springs, LA' },
+    { '@type': 'City', name: 'Prairieville, LA' },
+    { '@type': 'City', name: 'Walker, LA' },
+    { '@type': 'City', name: 'Gonzales, LA' },
+    { '@type': 'City', name: 'Zachary, LA' },
+  ],
+}
+
+export default function WaterTestingPage() {
+  return (
+    <>
+      <JsonLd data={serviceSchema} />
+      <PageHero
+        title="Free In-Home Water Testing in Baton Rouge, Louisiana"
+        intro="Before anyone should sell you a water system, someone should test your water. We do it for free, at your tap, with the results explained while you watch. If your water is fine, you will hear that from us in plain words, and the visit still costs nothing."
+        crumbs={[
+          { name: 'Home', href: '/' },
+          { name: 'Services', href: '/services' },
+          { name: 'Free Water Testing', href: PATH },
+        ]}
+        image="/images/service-testing.jpg"
+        imageAlt="Black branded Obsidian Water Solutions water test case with sample vials for in-home testing"
+      />
+
+      {/* What we test */}
+      <section className="section-padding bg-white">
+        <div className="container-wide max-w-4xl">
+          <p className="section-label">What we measure</p>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-3">
+            Five readings that tell your water&apos;s whole story
+          </h2>
+          <span className="waterline mt-5" aria-hidden="true" />
+          <div className="mt-10 space-y-8">
+            <div>
+              <h3 className="text-xl font-semibold">Hardness</h3>
+              <p className="mt-3 leading-relaxed text-zinc-600">
+                The mineral content that scales tankless water heaters, spots
+                glassware, and fights your soap. Baton Rouge aquifer water runs
+                naturally low, but your neighborhood, and especially your well, may
+                read differently. This number decides whether a softener is worth
+                discussing at all.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">Iron</h3>
+              <p className="mt-3 leading-relaxed text-zinc-600">
+                The mineral behind orange tub rings and stained laundry, and the
+                most common complaint from well homes in Livingston and Ascension
+                Parish. Even trace levels leave evidence, and the test tells us
+                whether iron treatment belongs in the conversation.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">Chlorine</h3>
+              <p className="mt-3 leading-relaxed text-zinc-600">
+                The disinfectant your utility adds to keep water safe in the lines.
+                It is supposed to be there, and it is also the taste and smell most
+                city water households want gone. We measure what actually reaches
+                your tap rather than quoting a system-wide average.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">Total dissolved solids</h3>
+              <p className="mt-3 leading-relaxed text-zinc-600">
+                A single number summarizing everything dissolved in your water. It
+                is the baseline for any drinking water decision and the
+                before-and-after proof of what a reverse osmosis system changes.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">pH</h3>
+              <p className="mt-3 leading-relaxed text-zinc-600">
+                How acidic or alkaline your water runs. It shapes taste, affects
+                plumbing over the long term, and helps us configure any equipment
+                correctly the first time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How the visit works */}
+      <section className="section-padding bg-mist">
+        <div className="container-wide">
+          <p className="section-label">How it works</p>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-3">
+            The 30-minute visit, step by step
+          </h2>
+          <span className="waterline mt-5" aria-hidden="true" />
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="rounded-3xl bg-white p-8 shadow-sm">
+              <h3 className="text-xl font-semibold">1. You pick the time</h3>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                Book through the contact form or a phone call. We come to you,
+                anywhere in the greater Baton Rouge area, at a time that fits your
+                household, not ours.
+              </p>
+            </div>
+            <div className="rounded-3xl bg-white p-8 shadow-sm">
+              <h3 className="text-xl font-semibold">2. We test at your tap</h3>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                Samples come from the faucets you actually drink from and bathe
+                with. Hardness, iron, chlorine, TDS, and pH, measured in front of
+                you with the test case open on your counter.
+              </p>
+            </div>
+            <div className="rounded-3xl bg-white p-8 shadow-sm">
+              <h3 className="text-xl font-semibold">3. You see every result</h3>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                Each reading gets explained in plain language as it develops: what
+                the number is, what normal looks like, and what yours means for
+                your home. Questions welcome the whole way through.
+              </p>
+            </div>
+            <div className="rounded-3xl bg-white p-8 shadow-sm">
+              <h3 className="text-xl font-semibold">4. You get a straight answer</h3>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-600">
+                If treatment makes sense, you get a clear recommendation and a real
+                price. If your water is fine as it is, you get told exactly that,
+                and we leave you with your results either way.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The honest wedge */}
+      <section className="section-padding bg-white">
+        <div className="container-wide grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <Image
+            src="/images/lifestyle-glass.jpg"
+            alt="Glass of clear drinking water poured after a free in-home water test in Baton Rouge"
+            width={2000}
+            height={1116}
+            className="w-full h-auto rounded-3xl"
+          />
+          <div>
+            <p className="section-label">What happens after</p>
+            <h2 className="text-3xl md:text-4xl font-semibold mt-3">
+              Sometimes the answer is that you need nothing
+            </h2>
+            <span className="waterline mt-5" aria-hidden="true" />
+            <p className="mt-7 leading-relaxed text-zinc-600">
+              This is the part most water companies will not put on a page. Some
+              tests end with us telling you your water is in good shape and
+              packing up the case. That outcome is fine with us. The free test is
+              how this company earns trust in a market where the water is often
+              genuinely good, and the households that do need treatment deserve a
+              recommendation built on measurements, not fear.
+            </p>
+            <p className="mt-4 leading-relaxed text-zinc-600">
+              When the numbers do call for equipment, everything we install comes
+              with free installation, a lifetime warranty, and pricing you hear
+              before anything is scheduled.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Well vs city */}
+      <section className="section-padding bg-mist">
+        <div className="container-wide max-w-4xl">
+          <p className="section-label">Well or city</p>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-3">
+            Testing well water is a different job than testing city water
+          </h2>
+          <span className="waterline mt-5" aria-hidden="true" />
+          <p className="mt-7 leading-relaxed text-zinc-600">
+            City water arrives pre-treated and monitored by a utility, so testing it
+            is about taste, chlorine, and baseline numbers before an upgrade. A
+            private well has no utility behind it: the owner is the water system,
+            and nobody is watching iron, sulfur, or sediment unless the owner has it
+            tested. If your home is on a well around Walker, Watson, Holden,
+            Prairieville, or St. Amant, the free test leans harder on iron and
+            sulfur indicators, because those are the problems local groundwater
+            actually serves up.
+          </p>
+          <p className="mt-4">
+            <Link
+              href="/services/well-water-treatment-baton-rouge-la"
+              className="text-primary font-semibold hover:text-primary-dark transition-colors"
+            >
+              Well water treatment in the Baton Rouge area →
+            </Link>
+          </p>
+          <p className="mt-2">
+            <Link
+              href="/services/well-water-treatment-walker-la"
+              className="text-primary font-semibold hover:text-primary-dark transition-colors"
+            >
+              Well water treatment in Walker →
+            </Link>
+          </p>
+          <p className="mt-6 leading-relaxed text-zinc-600">
+            Ready to see your numbers?{' '}
+            <Link
+              href="/contact"
+              className="text-primary font-semibold hover:text-primary-dark transition-colors"
+            >
+              Book your free water test
+            </Link>{' '}
+            and get the answer at your own kitchen counter.
+          </p>
+        </div>
+      </section>
+
+      <Faq items={faqs} title="Water testing questions, answered" />
+      <CtaSection
+        title="Book the free test and know for sure"
+        body="Thirty minutes, five readings, zero cost, zero obligation. Whether you are on city water in Baton Rouge or a well in the parishes, you will know exactly what is in your water before you spend a dollar on it."
+      />
+    </>
+  )
+}
