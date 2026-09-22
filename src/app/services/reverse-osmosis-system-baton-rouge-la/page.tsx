@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'How much does a reverse osmosis system cost?',
-    a: 'Reverse osmosis is the most affordable system we install. It is included in our Complete Home Package at $4,599 installed, where package pricing saves you up to 40% versus buying each system on its own. On its own, we quote it after the free water test, so it fits your water and your sink. Installation is free with your system either way.',
+    a: 'Reverse osmosis is the most affordable system we install. It is included in our Complete Home Package at $4,950 installed, where package pricing saves you up to 40% versus buying each system on its own. On its own, we quote it after the free water test, so it fits your water and your sink. Installation is free with your system either way.',
   },
   {
     q: 'Does reverse osmosis waste water?',
@@ -165,7 +165,7 @@ export default function ReverseOsmosisPage() {
             alt="Clear glass of reverse osmosis filtered drinking water in a Baton Rouge home"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </section>

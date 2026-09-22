@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'What does a filtration system cost in Denham Springs?',
-    a: 'The Complete Home Package is $4,599 installed. Buying each system on its own costs more, so the package can save you up to 40%. Many Denham Springs homes need less than the full package. That is why the free in-home water test comes first. We quote the one system your water actually needs, and installation is free either way.',
+    a: 'The Complete Home Package is $4,950 installed. Buying each system on its own costs more, so the package can save you up to 40%. Many Denham Springs homes need less than the full package. That is why the free in-home water test comes first. We quote the one system your water actually needs, and installation is free either way.',
   },
   {
     q: 'Do you serve all of Livingston Parish?',
@@ -163,7 +163,7 @@ export default function DenhamSpringsFiltrationPage() {
             alt="Water test kit with sample vials comparing discolored and filtered water in Denham Springs Louisiana"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </section>

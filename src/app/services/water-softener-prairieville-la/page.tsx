@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'What does a water softener cost in Prairieville?',
-    a: 'The Complete Home Package pairs a softener with drinking-water filtration for $4,599 installed. Package pricing can save up to 40% versus buying each system on its own. A softener by itself costs less. We quote from your free in-home water test, so it is sized to how hard your water really is, and installation is free either way.',
+    a: 'The Complete Home Package pairs a softener with drinking-water filtration for $4,950 installed. Package pricing can save up to 40% versus buying each system on its own. A softener by itself costs less. We quote from your free in-home water test, so it is sized to how hard your water really is, and installation is free either way.',
   },
   {
     q: 'Is installation different for new construction versus an older home?',
@@ -162,7 +162,7 @@ export default function PrairievilleSoftenerPage() {
             alt="New brick home in a Prairieville Louisiana subdivision protected by a water softener system"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </section>

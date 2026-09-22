@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: 'How much does a water softener cost installed?',
-    a: 'The price depends on how hard your water is and how big your home is. That is why the free water test comes before any quote. Our best value is the Complete Home Package at $4,599 installed. It pairs a softener with a chlorine filter and can save you up to 40% versus buying the pieces apart. Installation is free with every system either way.',
+    a: 'The price depends on how hard your water is and how big your home is. That is why the free water test comes before any quote. Our best value is the Complete Home Package at $4,950 installed. It pairs a softener with a chlorine filter and can save you up to 40% versus buying the pieces apart. Installation is free with every system either way.',
   },
   {
     q: 'Why do tankless water heaters need soft water?',
@@ -149,7 +149,7 @@ export default function WaterSoftenerPage() {
             alt="Black tank softener and chlorine filtration combination system for a Baton Rouge area home"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
           <div>
             <p className="section-label">The flagship</p>
@@ -161,7 +161,7 @@ export default function WaterSoftenerPage() {
               Our most popular setup does two jobs in one tank. It softens your
               water and filters out the chlorine taste at the same time. So you get
               soft water and better-tasting water from a single system. It anchors
-              our Complete Home Package at $4,599 installed. Buying the pieces apart
+              our Complete Home Package at $4,950 installed. Buying the pieces apart
               costs more, so the package can save you up to 40%, and installation is
               free.
             </p>

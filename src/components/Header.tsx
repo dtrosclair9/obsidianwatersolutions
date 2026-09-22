@@ -87,9 +87,9 @@ export default function Header() {
               {servicesOpen && (
                 <div
                   id="services-menu"
-                  className="absolute left-0 top-full mt-3 w-72 rounded-2xl bg-white shadow-xl ring-1 ring-zinc-100 p-2"
+                  className="absolute left-0 top-full mt-3 w-72 rounded-lg bg-white shadow-xl ring-1 ring-zinc-100 p-2"
                 >
-                  <div className="h-1 rounded-full bg-splash mb-2" aria-hidden="true" />
+                  <div className="h-1 bg-ribbon mb-2" aria-hidden="true" />
                   {services.map((s) => (
                     <Link
                       key={s.slug}

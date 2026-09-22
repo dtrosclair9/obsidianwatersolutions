@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
+import HeroSchematic from '@/components/HeroSchematic'
 import Faq from '@/components/Faq'
 import CtaSection from '@/components/CtaSection'
 import { BASE_URL, ogImage, site, services, cityPages } from '@/lib/site'
@@ -55,7 +56,7 @@ const homeFaqs = [
   },
   {
     q: 'How much does a whole-house water filtration system cost in Baton Rouge?',
-    a: 'A full home package with a softener, tankless reverse osmosis, and an alkaline filter is $4,599 installed. Buying the pieces separately costs more, so the package can save you up to 40%. A single system costs less. Your free test shows which parts your home actually needs, so you pay for the right setup and nothing extra.',
+    a: 'A full home package with a softener, tankless reverse osmosis, and an alkaline filter is $4,950 installed. Buying the pieces separately costs more, so the package can save you up to 40%. A single system costs less. Your free test shows which parts your home actually needs, so you pay for the right setup and nothing extra.',
   },
   {
     q: 'Do you install water treatment systems for well water?',
@@ -146,42 +147,41 @@ export default function HomePage() {
     <>
       <JsonLd data={[localBusinessSchema, webSiteSchema, howToSchema]} />
 
-      {/* Hero — split: headline left, product trio right */}
+      {/* Hero — 55/45 split: copy left, treatment schematic right.
+          The illustration replaces a photo deliberately: we have no completed
+          installs to photograph, and a generated one would undercut the whole
+          "we show you real information" strategy this page is built on. */}
       <section className="bg-white">
         <div className="container-wide pt-14 pb-16 md:pt-20 md:pb-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[55fr_45fr] gap-10 lg:gap-14 items-center">
             <div>
               <p className="section-label">Baton Rouge · Denham Springs · Prairieville &amp; beyond</p>
-              <h1 className="text-4xl md:text-6xl font-semibold leading-tight mt-4">
-                Water Filtration &amp; Softener Systems in Baton Rouge, Louisiana
+              <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.08] tracking-[-0.025em] mt-4">
+                Water treatment for Baton Rouge homes.
               </h1>
               <span className="waterline mt-6" aria-hidden="true" />
               <p className="mt-7 text-lg md:text-xl text-zinc-600 leading-relaxed max-w-xl">
-                Bad taste. Hard-water spots. Orange stains. That rotten-egg smell.
-                It all comes back to your water. We find out what is wrong with
-                yours and fix it, starting with a free test at your home.
+                Iron stains, sulfur odors, or water you do not like drinking?
+                Start with a free water test. We install filtration, softeners,
+                and drinking-water systems, with a focus on well water in
+                Livingston and Ascension parishes.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
                 <Link href="/contact" className="btn-splash text-base">
-                  Book your free water test
+                  Book a free water test
                 </Link>
-                <a href={`tel:${site.phoneRaw}`} className="btn-outline-ink text-base">
-                  Call {site.phoneDisplay}
+                <a href="#pricing" className="btn-outline-ink text-base">
+                  See installed pricing
                 </a>
               </div>
               <p className="mt-6 text-sm text-zinc-500">
                 Free installation · Lifetime warranty · Insured
               </p>
             </div>
-            <div className="relative">
-              <Image
-                src="/images/hero-home.jpg"
-                alt="Obsidian Water Solutions water softener, tankless reverse osmosis system, and water testing kit"
-                width={2000}
-                height={1116}
-                className="w-full h-auto rounded-3xl"
-                priority
-              />
+            <div className="lg:order-last">
+              <div className="rounded-lg bg-mist p-4 sm:p-6">
+                <HeroSchematic className="w-full h-auto" />
+              </div>
             </div>
           </div>
         </div>
@@ -225,7 +225,7 @@ export default function HomePage() {
               <Link
                 key={s.slug}
                 href={`/services/${s.slug}`}
-                className="group rounded-3xl bg-white ring-1 ring-zinc-100 shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
+                className="group rounded-lg bg-white ring-1 ring-zinc-100 shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
               >
                 <div className="aspect-[16/9] overflow-hidden bg-mist">
                   <Image
@@ -245,8 +245,8 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
-            {/* Complete package card */}
-            <div className="rounded-3xl bg-ink text-white p-6 flex flex-col justify-between">
+            {/* Complete package card — target of the hero's "See installed pricing" */}
+            <div id="pricing" className="scroll-mt-28 rounded-lg bg-ink text-white p-6 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-semibold text-white">Complete Home Package</h3>
                 <p className="mt-3 text-sm leading-relaxed text-zinc-300">
@@ -254,7 +254,7 @@ export default function HomePage() {
                   installed free. Buying them separately costs more, so the package
                   can save you up to 40%.
                 </p>
-                <p className="mt-4 text-2xl font-serif font-semibold text-white">$4,599 installed</p>
+                <p className="mt-4 text-2xl font-semibold text-white">$4,950 installed</p>
               </div>
               <Link href="/contact" className="btn-splash text-sm mt-6 text-center">
                 Get package pricing
@@ -286,7 +286,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/services/well-water-treatment-walker-la"
-                className="border-2 border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-ink transition-colors inline-block"
+                className="border-2 border-white text-white font-bold px-6 py-3.5 rounded-md hover:bg-white hover:text-ink transition-colors inline-block"
               >
                 Well water in Walker
               </Link>
@@ -297,7 +297,7 @@ export default function HomePage() {
             alt="Dual tank well water iron and sulfur treatment system by Obsidian Water Solutions"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </section>
@@ -312,7 +312,7 @@ export default function HomePage() {
           <span className="waterline mt-5" aria-hidden="true" />
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((s, i) => (
-              <div key={s.name} className="rounded-3xl bg-mist p-7">
+              <div key={s.name} className="rounded-lg bg-mist p-7">
                 <div className="w-10 h-10 rounded-full bg-splash text-white font-bold flex items-center justify-center">
                   {i + 1}
                 </div>
@@ -333,7 +333,7 @@ export default function HomePage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">Water is all we do</h3>
               <p className="mt-3 leading-relaxed text-zinc-600 text-sm">
                 Around here, most companies treat water as a side job on a plumbing or
@@ -341,15 +341,15 @@ export default function HomePage() {
                 and taking care of water systems is all we do.
               </p>
             </div>
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">Test first, quote second</h3>
               <p className="mt-3 leading-relaxed text-zinc-600 text-sm">
-                Nobody should buy a $4,599 system because a brochure said so. We show
+                Nobody should buy a $4,950 system because a brochure said so. We show
                 you the numbers from your own tap, explain what they mean in plain
                 terms, and match the system to your water.
               </p>
             </div>
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">Here after the install</h3>
               <p className="mt-3 leading-relaxed text-zinc-600 text-sm">
                 The biggest complaint in this business is going quiet after the sale.
@@ -395,7 +395,7 @@ export default function HomePage() {
             alt="South Louisiana brick home with live oak in the greater Baton Rouge area"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </section>

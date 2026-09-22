@@ -114,7 +114,7 @@ export default function ContactPage() {
               </li>
             </ol>
 
-            <div className="mt-10 rounded-3xl bg-mist p-7 space-y-5">
+            <div className="mt-10 rounded-lg bg-mist p-7 space-y-5">
               <div>
                 <p className="font-semibold text-sm">Phone</p>
                 <a

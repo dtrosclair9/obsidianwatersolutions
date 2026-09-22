@@ -11,7 +11,7 @@ const PATH = '/services'
 export const metadata: Metadata = {
   title: { absolute: 'Water Treatment Services in Baton Rouge, LA' },
   description:
-    'Whole-house water filtration, softeners, reverse osmosis, well water treatment & free testing for the Baton Rouge area. Complete package $4,599 installed.',
+    'Whole-house water filtration, softeners, reverse osmosis, well water treatment & free testing for the Baton Rouge area. Complete package $4,950 installed.',
   alternates: { canonical: pageUrl(PATH) },
   openGraph: {
     title: 'Water Treatment Services in Baton Rouge, LA | Obsidian Water Solutions',
@@ -93,7 +93,7 @@ export default function ServicesIndexPage() {
               <Link
                 key={s.slug}
                 href={`/services/${s.slug}`}
-                className="group rounded-3xl bg-white shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
+                className="group rounded-lg bg-white shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
               >
                 <div className="aspect-[16/9] overflow-hidden bg-mist">
                   <Image
@@ -122,7 +122,7 @@ export default function ServicesIndexPage() {
       {/* Complete Home Package banner */}
       <section className="section-padding bg-white">
         <div className="container-wide">
-          <div className="rounded-3xl bg-ink px-8 py-14 md:px-16 md:py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className="rounded-lg bg-ink px-8 py-14 md:px-16 md:py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
               <p className="section-label text-accent-light">Best value</p>
               <h2 className="text-3xl md:text-4xl font-semibold mt-3 text-white">
@@ -132,7 +132,7 @@ export default function ServicesIndexPage() {
               <p className="mt-6 text-lg leading-relaxed text-zinc-300">
                 You get a high-efficiency water softener, tankless reverse osmosis
                 drinking water, and alkaline filtration in one bundle. The price is
-                $4,599 installed. Buying each part on its own costs more, so the bundle
+                $4,950 installed. Buying each part on its own costs more, so the bundle
                 can save you up to 40%. Install is free, and the equipment carries a
                 lifetime warranty.
               </p>
@@ -142,15 +142,15 @@ export default function ServicesIndexPage() {
                 </Link>
                 <a
                   href={`tel:${site.phoneRaw}`}
-                  className="border-2 border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-ink transition-colors inline-block"
+                  className="border-2 border-white text-white font-bold px-6 py-3.5 rounded-md hover:bg-white hover:text-ink transition-colors inline-block"
                 >
                   Call {site.phoneDisplay}
                 </a>
               </div>
             </div>
             <div>
-              <p className="text-5xl md:text-6xl font-serif font-semibold text-white">
-                $4,599
+              <p className="text-5xl md:text-6xl font-semibold text-white">
+                $4,950
               </p>
               <p className="mt-2 text-zinc-300">installed, whole home</p>
               <ul className="mt-6 space-y-3">

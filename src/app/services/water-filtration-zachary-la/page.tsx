@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'What does water filtration cost in Zachary?',
-    a: 'The Complete Home Package is $4,599 installed, and package pricing can save up to 40% versus buying each system on its own. A reverse osmosis system on its own costs much less than the package. The free in-home water test comes first, so we quote only the gear your water and your goals actually call for, and installation is free either way.',
+    a: 'The Complete Home Package is $4,950 installed, and package pricing can save up to 40% versus buying each system on its own. A reverse osmosis system on its own costs much less than the package. The free in-home water test comes first, so we quote only the gear your water and your goals actually call for, and installation is free either way.',
   },
   {
     q: 'Do you serve Central and Baker too?',
@@ -164,7 +164,7 @@ export default function ZacharyFiltrationPage() {
             alt="Tankless reverse osmosis drinking water system at a kitchen sink in Zachary Louisiana"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </section>

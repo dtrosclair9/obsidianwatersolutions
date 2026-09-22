@@ -12,7 +12,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-ink;
+    @apply font-sans text-ink;
   }
 
   /* Visible keyboard focus indicator (WCAG 2.4.7 / 2.4.11). */
@@ -44,15 +44,15 @@
   }
 
   .btn-splash {
-    @apply bg-splash text-white font-semibold px-6 py-3 rounded-full transition-opacity duration-200 inline-block hover:opacity-90;
+    @apply bg-primary text-white font-bold px-6 py-3.5 rounded-md transition-colors duration-200 inline-block hover:bg-primary-dark;
   }
 
   .btn-ink {
-    @apply bg-ink text-white font-semibold px-6 py-3 rounded-full transition-colors duration-200 inline-block hover:bg-ink-soft;
+    @apply bg-ink text-white font-bold px-6 py-3.5 rounded-md transition-colors duration-200 inline-block hover:bg-ink-soft;
   }
 
   .btn-outline-ink {
-    @apply border-2 border-ink text-ink font-semibold px-6 py-3 rounded-full transition-colors duration-200 inline-block hover:bg-ink hover:text-white;
+    @apply border-2 border-ink text-ink font-bold px-6 py-3.5 rounded-md transition-colors duration-200 inline-block hover:bg-ink hover:text-white;
   }
 
   .section-padding {
@@ -69,7 +69,7 @@
 
   /* The signature: the logo's splash as a thin waterline under headings. */
   .waterline {
-    @apply block h-1.5 w-24 rounded-full bg-splash;
+    @apply block h-1.5 w-28 bg-ribbon;
   }
   .waterline--center {
     @apply mx-auto;

@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: 'What does water filtration cost in Gonzales?',
-    a: 'The Complete Home Package is $4,599 installed, and package pricing can save up to 40% versus buying each system on its own. Single systems cost less. A well home usually needs different gear than a home on city water. The free in-home water test comes first, so the quote matches what is really in your water, and installation is free either way.',
+    a: 'The Complete Home Package is $4,950 installed, and package pricing can save up to 40% versus buying each system on its own. Single systems cost less. A well home usually needs different gear than a home on city water. The free in-home water test comes first, so the quote matches what is really in your water, and installation is free either way.',
   },
   {
     q: 'Do you cover St. Amant and Geismar too?',
@@ -171,7 +171,7 @@ export default function GonzalesFiltrationPage() {
             alt="Whole house water filtration tank system installed for a Gonzales Louisiana home"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </section>

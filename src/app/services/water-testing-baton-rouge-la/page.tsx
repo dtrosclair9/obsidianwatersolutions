@@ -151,7 +151,7 @@ export default function WaterTestingPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">1. You pick the time</h3>
               <p className="mt-3 text-sm leading-relaxed text-zinc-600">
                 Book through the contact form or a phone call. We come to you,
@@ -159,7 +159,7 @@ export default function WaterTestingPage() {
                 household, not ours.
               </p>
             </div>
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">2. We test at your tap</h3>
               <p className="mt-3 text-sm leading-relaxed text-zinc-600">
                 We take samples from the faucets you drink from and bathe with. Then
@@ -167,7 +167,7 @@ export default function WaterTestingPage() {
                 on your counter.
               </p>
             </div>
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">3. You see every result</h3>
               <p className="mt-3 text-sm leading-relaxed text-zinc-600">
                 We explain each reading in plain words as it comes up: what the
@@ -175,7 +175,7 @@ export default function WaterTestingPage() {
                 home. Ask questions the whole way through.
               </p>
             </div>
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">4. You get a straight answer</h3>
               <p className="mt-3 text-sm leading-relaxed text-zinc-600">
                 You see what is in your water and what each number means for your
@@ -195,7 +195,7 @@ export default function WaterTestingPage() {
             alt="Glass of clear drinking water poured after a free in-home water test in Baton Rouge"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
           <div>
             <p className="section-label">What happens after</p>

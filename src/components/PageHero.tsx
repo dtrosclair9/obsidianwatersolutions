@@ -62,7 +62,7 @@ export default function PageHero({ title, intro, crumbs, image, imageAlt, cta = 
             )}
           </div>
           {image && (
-            <div className="relative rounded-3xl overflow-hidden bg-mist">
+            <div className="relative rounded-lg overflow-hidden bg-mist">
               <Image
                 src={image}
                 alt={imageAlt ?? ''}

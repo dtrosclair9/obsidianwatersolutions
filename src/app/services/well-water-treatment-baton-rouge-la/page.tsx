@@ -147,7 +147,7 @@ export default function WellWaterPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">Two-tank well systems</h3>
               <p className="mt-3 text-sm leading-relaxed text-zinc-600">
                 We use two tanks, each with its own job. One removes the iron and
@@ -156,7 +156,7 @@ export default function WellWaterPage() {
                 well systems fail.
               </p>
             </div>
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">The right filter for your water</h3>
               <p className="mt-3 text-sm leading-relaxed text-zinc-600">
                 A little iron, a lot of iron, and a sulfur smell each need a different
@@ -164,7 +164,7 @@ export default function WellWaterPage() {
                 water test, not from a catalog default.
               </p>
             </div>
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">Built around your whole setup</h3>
               <p className="mt-3 text-sm leading-relaxed text-zinc-600">
                 Well treatment has to work with your pump, your pressure tank, and
@@ -209,7 +209,7 @@ export default function WellWaterPage() {
             alt="Obsidian Water Solutions well water testing kit with sample vials showing iron-tinted and clear water"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </section>

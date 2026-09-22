@@ -33,12 +33,12 @@ export default function Faq({ items, title = 'Frequently Asked Questions', label
           {items.map((f) => (
             <details
               key={f.q}
-              className={`group rounded-2xl px-6 py-5 ${
+              className={`group rounded-lg px-6 py-5 ${
                 dark ? 'bg-ink-soft text-zinc-300' : 'bg-white shadow-sm'
               }`}
             >
               <summary
-                className={`cursor-pointer list-none flex items-start justify-between gap-4 font-serif text-lg font-medium ${
+                className={`cursor-pointer list-none flex items-start justify-between gap-4 text-lg font-medium ${
                   dark ? 'text-white' : 'text-ink'
                 }`}
               >

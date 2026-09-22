@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'How much does whole house water filtration cost in Baton Rouge?',
-    a: 'Our Complete Home Package is $4,599 installed. Package pricing can save you up to 40% versus buying each piece apart. Installation is free with your system. And every quote starts with a free in-home water test, so the gear matches what is actually in your water. You see the full price before anything is scheduled.',
+    a: 'Our Complete Home Package is $4,950 installed. Package pricing can save you up to 40% versus buying each piece apart. Installation is free with your system. And every quote starts with a free in-home water test, so the gear matches what is actually in your water. You see the full price before anything is scheduled.',
   },
   {
     q: 'What does a whole house filter actually remove?',
@@ -147,7 +147,7 @@ export default function WholeHouseFiltrationPage() {
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">Whole house: clean it all at once</h3>
               <p className="mt-3 leading-relaxed text-zinc-600">
                 A whole house filter goes in at your main line. It cleans every drop
@@ -157,7 +157,7 @@ export default function WholeHouseFiltrationPage() {
                 house, not just one faucet.
               </p>
             </div>
-            <div className="rounded-3xl bg-white p-8 shadow-sm">
+            <div className="rounded-lg bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold">One faucet: polish the drinking water</h3>
               <p className="mt-3 leading-relaxed text-zinc-600">
                 A filter under one sink, like reverse osmosis, cleans only that
@@ -217,7 +217,7 @@ export default function WholeHouseFiltrationPage() {
             alt="Brick home in the Baton Rouge area protected by whole house water filtration"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </section>

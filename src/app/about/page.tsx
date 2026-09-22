@@ -126,7 +126,7 @@ export default function AboutPage() {
           <span className="waterline mt-5" aria-hidden="true" />
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
             {standards.map((s) => (
-              <div key={s.title} className="rounded-3xl bg-white p-8 shadow-sm">
+              <div key={s.title} className="rounded-lg bg-white p-8 shadow-sm">
                 <h3 className="text-xl font-semibold">{s.title}</h3>
                 <p className="mt-3 leading-relaxed text-zinc-600">{s.text}</p>
               </div>
@@ -163,7 +163,7 @@ export default function AboutPage() {
             alt="Professional-grade whole house water filtration tanks installed by Obsidian Water Solutions"
             width={2000}
             height={1116}
-            className="w-full h-auto rounded-3xl"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </section>

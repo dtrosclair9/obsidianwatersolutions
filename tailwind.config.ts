@@ -8,35 +8,54 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // Brand kit: Spring Flow / Italic, approved 2026-09-21.
+      // Contrast against WHITE measured before adoption — respect these limits:
+      //   primary  #006F9D  5.58:1  the ONLY brand colour that passes AA for small text
+      //   accent   #0087B5  4.09:1  FAILS small text. Large text (24px+), icons, graphics only.
+      //   leaf     #609C35  3.33:1  FAILS small text. Graphic/accent device only, never body copy.
+      //   ink      #12323E 13.54:1
+      // Buttons and links take `primary` or `ink`. Never set body copy in `leaf` or `accent`.
       colors: {
-        // Obsidian black — headings, footer, product hardware
+        // Deep navy — headings, footer, dark sections
         ink: {
-          DEFAULT: '#0B0B0F',
-          soft: '#1A1A22',
+          DEFAULT: '#12323E',
+          soft: '#1C4454',
         },
-        // Violet end of the logo splash
+        // Wordmark blue — buttons, links, body-size brand text
         primary: {
-          DEFAULT: '#6D28D9',
-          light: '#8B5CF6',
-          dark: '#5B21B6',
+          DEFAULT: '#006F9D',
+          light: '#0087B5',
+          dark: '#005778',
         },
-        // Electric-blue end of the logo splash
+        // Stream blue — large headings, icons, graphic fills
         accent: {
-          DEFAULT: '#2563EB',
-          light: '#38BDF8',
-          dark: '#1D4ED8',
+          DEFAULT: '#0087B5',
+          light: '#33A2C7',
+          dark: '#006C90',
         },
-        // Faint violet-tinted gray for alternating sections
-        mist: '#F6F5FA',
+        // Leaf green — the middle ribbon. Graphic device and large accents only.
+        leaf: {
+          DEFAULT: '#609C35',
+          light: '#7BB552',
+          dark: '#4C7C2A',
+        },
+        // Off-white for alternating sections
+        mist: '#F4F7F3',
       },
+      // Manrope only. Spectral was dropped with the rebrand: a literary serif
+      // fights the new mark's directness and the product-brand positioning.
       fontFamily: {
-        sans: ['var(--font-manrope)', 'sans-serif'],
-        serif: ['var(--font-spectral)', 'Georgia', 'serif'],
+        sans: ['var(--font-manrope)', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
-        splash: 'linear-gradient(90deg, #7C3AED 0%, #2563EB 55%, #38BDF8 100%)',
-        'splash-soft':
-          'linear-gradient(90deg, rgba(124,58,237,0.08) 0%, rgba(37,99,235,0.08) 55%, rgba(56,189,248,0.08) 100%)',
+        // The new identity is FLAT — the old violet→cyan gradient is gone.
+        // `splash` is kept as a token name because 36 call sites reference it;
+        // it now resolves to a solid brand blue. Deleting the key would make
+        // Tailwind silently drop the class and leave white text on transparent.
+        splash: 'linear-gradient(90deg, #006F9D 0%, #006F9D 100%)',
+        // Three-stripe rule echoing the stream mark. Use as a thin divider only.
+        ribbon:
+          'linear-gradient(90deg, #0087B5 0%, #0087B5 33%, #609C35 33%, #609C35 66%, #006F9D 66%, #006F9D 100%)',
       },
     },
   },

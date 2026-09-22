@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Manrope, Spectral } from 'next/font/google'
+import { Manrope } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -11,12 +11,6 @@ const manrope = Manrope({
   display: 'swap',
 })
 
-const spectral = Spectral({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-spectral',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -59,7 +53,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${manrope.variable} ${spectral.variable}`}>
+    <html lang="en" className={manrope.variable}>
       <body className="font-sans text-zinc-700 antialiased">
         <a href="#main" className="skip-link">Skip to main content</a>
         <Header />
