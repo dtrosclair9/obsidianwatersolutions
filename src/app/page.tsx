@@ -201,9 +201,14 @@ export default function HomePage() {
               </p>
             </div>
             <div className="lg:order-last">
-              <div className="rounded-lg bg-mist p-4 sm:p-6">
-                <HeroSchematic className="w-full h-auto" />
-              </div>
+              <Image
+                src="/images/hero-family.jpg"
+                alt="A parent filling a glass of water at the kitchen sink while a child watches, in a Baton Rouge area home"
+                width={1600}
+                height={1142}
+                className="w-full h-auto rounded-lg"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -438,6 +443,12 @@ export default function HomePage() {
             Equipment needs room to operate and room for maintenance. The location
             depends on your plumbing and the system selected.
           </p>
+
+          {/* Layout first (where it goes), then the spec detail (what is inside).
+              The schematic moved here from the hero when the hero became a photo. */}
+          <div className="mt-12 rounded-lg bg-mist p-6 sm:p-10">
+            <HeroSchematic className="w-full h-auto max-w-3xl mx-auto" />
+          </div>
 
           <div className="mt-12">
             <SystemSpec />

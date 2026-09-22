@@ -53,10 +53,10 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="Obsidian Water Solutions logo"
-              width={190}
-              height={64}
-              className="h-12 w-auto"
+              width={520}
+              height={84}
               priority
+              className="h-9 lg:h-10 w-auto"
             />
           </Link>
 
