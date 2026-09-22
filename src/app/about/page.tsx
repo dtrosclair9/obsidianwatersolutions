@@ -173,7 +173,7 @@ export default function AboutPage() {
         <div className="container-wide max-w-4xl">
           <p className="section-label">Where we work</p>
           <h2 className="text-3xl md:text-4xl font-semibold mt-3">
-            Serving four parishes around Baton Rouge
+            Serving six parishes across south Louisiana
           </h2>
           <span className="waterline mt-5" aria-hidden="true" />
           <p className="mt-7 leading-relaxed text-zinc-600">

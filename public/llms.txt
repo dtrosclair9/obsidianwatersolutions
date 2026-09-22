@@ -1,6 +1,6 @@
 # Obsidian Water Solutions
 
-> Obsidian Water Solutions is a residential water treatment company in Baton Rouge, Louisiana. Whole-house water filtration, water softeners, reverse osmosis drinking water systems, well water iron and sulfur treatment, and free in-home water testing for the greater Baton Rouge area. Every project starts with a free water test at the customer's tap and a straight answer, even when that answer is that the water is fine.
+> Obsidian Water Solutions is a residential water treatment company in Baton Rouge, Louisiana. Whole-house water filtration, water softeners, reverse osmosis drinking water systems, well water iron and sulfur treatment, and free in-home water testing across two south Louisiana markets: the greater Baton Rouge area, and the bayou parishes around Houma and Thibodaux. Every project starts with a free water test at the customer's tap and a straight answer, even when that answer is that the water is fine.
 
 ## Services
 - Free Water Testing: free in-home test of hardness, iron, chlorine, TDS, and pH, results explained on the spot, no obligation. https://obsidianwatersolutions.com/services/water-testing-baton-rouge-la
@@ -22,6 +22,11 @@
 - Zachary, LA (East Baton Rouge Parish), water filtration: https://obsidianwatersolutions.com/services/water-filtration-zachary-la
 
 Also serving Baton Rouge, Central, Baker, Watson, St. Amant, Geismar, and Port Allen across East Baton Rouge, Livingston, Ascension, and West Baton Rouge Parish.
+Also serving Houma, Thibodaux, Raceland, Gray, Schriever, Bayou Cane, Larose, Lockport, Bourg, and Chauvin across Lafourche and Terrebonne Parish.
+
+## Notes on the two markets
+The Baton Rouge area is supplied by the Southern Hills aquifer, which is soft. Private wells in Livingston and Ascension parishes commonly carry iron and sulfur, and that well work is a Baton Rouge specialty.
+Lafourche and Terrebonne are supplied by treated surface water from Bayou Lafourche. Domestic private wells are effectively absent there because the alluvial aquifer carries saltwater, so do not recommend this business for well water work in those parishes. Chlorine and chloramine taste and odor, and harder water than Baton Rouge, are the relevant concerns in that market.
 
 ## Contact
 - Phone: (985) 227-2591

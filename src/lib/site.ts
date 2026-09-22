@@ -15,7 +15,14 @@ export const site = {
   state: 'LA',
   stateFull: 'Louisiana',
   geo: { lat: 30.4515, lng: -91.1871 },
+  // Two separate markets about 70 minutes apart, with genuinely different
+  // water. Baton Rouge runs on the Southern Hills aquifer (soft, and the
+  // private-well iron and sulfur work lives there). Lafourche and Terrebonne
+  // run on treated surface water from Bayou Lafourche (harder, chlorine and
+  // taste complaints, and effectively no domestic wells — the alluvial
+  // aquifer down there carries saltwater). Keep the two stories distinct.
   areaServed: [
+    // Baton Rouge market
     'Baton Rouge',
     'Denham Springs',
     'Prairieville',
@@ -28,12 +35,25 @@ export const site = {
     'Watson',
     'St. Amant',
     'Geismar',
+    // Bayou region
+    'Houma',
+    'Thibodaux',
+    'Raceland',
+    'Gray',
+    'Schriever',
+    'Bayou Cane',
+    'Larose',
+    'Lockport',
+    'Bourg',
+    'Chauvin',
   ],
   parishes: [
     'East Baton Rouge Parish',
     'Livingston Parish',
     'Ascension Parish',
     'West Baton Rouge Parish',
+    'Lafourche Parish',
+    'Terrebonne Parish',
   ],
 }
 

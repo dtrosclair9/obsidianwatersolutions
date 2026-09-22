@@ -177,16 +177,19 @@ export default function HomePage() {
         <div className="container-wide pt-14 pb-16 md:pt-20 md:pb-24">
           <div className="grid grid-cols-1 lg:grid-cols-[55fr_45fr] gap-10 lg:gap-14 items-center">
             <div>
-              <p className="section-label">Baton Rouge · Denham Springs · Prairieville &amp; beyond</p>
+              <p className="section-label">Baton Rouge · Thibodaux · Houma &amp; surrounding areas</p>
               <h1 className="text-4xl md:text-6xl font-extrabold leading-[1.08] tracking-[-0.025em] mt-4">
-                Water treatment for Baton Rouge homes.
+                Water treatment for Baton Rouge and Thibodaux homes.
               </h1>
               <span className="waterline mt-6" aria-hidden="true" />
+              {/* Two markets, two different water problems. The subhead names
+                  both rather than committing the company to the well-water
+                  story, which only applies around Baton Rouge. */}
               <p className="mt-7 text-lg md:text-xl text-zinc-600 leading-relaxed max-w-xl">
-                Iron stains, sulfur odors, or water you do not like drinking?
-                Start with a free water test. We install filtration, softeners,
-                and drinking-water systems, with a focus on well water in
-                Livingston and Ascension parishes.
+                Iron stains, a chlorine smell, scale on the fixtures, or water
+                you do not like drinking? Start with a free water test. We
+                install filtration, softeners and drinking-water systems across
+                the Baton Rouge area and the bayou parishes.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
                 <Link href="/contact" className="btn-splash text-base">
