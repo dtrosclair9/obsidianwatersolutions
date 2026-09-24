@@ -239,6 +239,44 @@ export default function WaterSoftenerPage() {
         </div>
       </section>
 
+      {/* Pool bypass. Deliberately tells the buyer where this product should NOT
+          go, which is both true and the strongest trust copy on the page. */}
+      <section className="section-padding bg-mist">
+        <div className="container-wide max-w-4xl">
+          <p className="section-label">Have a pool? Read this first</p>
+          <h2 className="text-3xl md:text-4xl font-bold mt-3 tracking-[-0.015em]">
+            Do not fill a swimming pool with softened water.
+          </h2>
+          <span className="waterline mt-5" aria-hidden="true" />
+          <p className="mt-7 text-lg leading-relaxed text-zinc-600">
+            A softener is the right answer for scale inside your house. It is the
+            wrong water for a pool, and it is worth knowing that before you buy rather
+            than after.
+          </p>
+          <p className="mt-5 leading-relaxed text-zinc-600">
+            The National Plasterers Council advises that pool fill water sit above 200
+            parts per million of calcium hardness, and that soft water and reverse
+            osmosis water be bypassed when filling. Water that low in calcium goes
+            looking for calcium somewhere else, and it finds it in the plaster. The
+            damage ranges from discolouration to a weakened cement binder and a shorter
+            service life for the finish. Filling an entire pool through a residential
+            softener will also exhaust the resin bed.
+          </p>
+          <p className="mt-5 leading-relaxed text-zinc-600">
+            None of that means you cannot have a softener. It means the hose bib or
+            autofill line that feeds the pool should sit on the untreated side of it.
+            We check that when we quote, and it is usually a plumbing detail rather
+            than a different system.
+          </p>
+          <Link
+            href="/services/pool-fill-water-treatment-baton-rouge-la"
+            className="mt-7 inline-block text-[15px] font-bold text-primary underline underline-offset-2"
+          >
+            Pool fill water treatment
+          </Link>
+        </div>
+      </section>
+
       <Faq items={faqs} title="Water softener questions, answered" />
       <CtaSection
         title="Test your water before it costs you a water heater"

@@ -118,6 +118,16 @@ export const services: Service[] = [
       'Dual tank well water treatment system for iron and sulfur removal in Livingston and Ascension Parish',
   },
   {
+    slug: 'pool-fill-water-treatment-baton-rouge-la',
+    name: 'Pool Fill Water Treatment',
+    navLabel: 'Pool Fill Water Treatment',
+    short:
+      'A pool concentrates whatever fills it. We test the tap water behind the stains and the scale, and treat the supply rather than the pool.',
+    image: '/images/service-well.jpg',
+    imageAlt:
+      'Iron and sulfur removal system treating pool fill water for a Baton Rouge area home',
+  },
+  {
     slug: 'water-testing-baton-rouge-la',
     name: 'Free Water Testing',
     navLabel: 'Free Water Testing',
@@ -180,6 +190,16 @@ export const cityPages: CityPage[] = [
     h1: 'Water Filtration in Gonzales, Louisiana',
     image: '/images/lifestyle-home.jpg',
     imageAlt: 'South Louisiana home served by Obsidian Water Solutions in Gonzales',
+  },
+  {
+    slug: 'pool-fill-water-treatment-thibodaux-la',
+    city: 'Thibodaux',
+    parish: 'Lafourche Parish',
+    service: 'Pool Fill Water Treatment',
+    navLabel: 'Thibodaux',
+    h1: 'Pool Fill Water Treatment in Thibodaux, Louisiana',
+    image: '/images/service-whole-house.jpg',
+    imageAlt: 'Whole house filtration treating pool fill water for a Thibodaux Louisiana home',
   },
   {
     slug: 'water-filtration-zachary-la',
