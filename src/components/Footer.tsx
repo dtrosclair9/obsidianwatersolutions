@@ -13,9 +13,9 @@ export default function Footer() {
             <Image
               src="/images/logo-dark.png"
               alt="Obsidian Water Solutions logo"
-              width={520}
-              height={84}
-              className="h-10 w-auto mb-5"
+              width={600}
+              height={159}
+              className="h-14 w-auto mb-5"
             />
             <p className="text-sm leading-relaxed">
               Water filtration, softeners, reverse osmosis, and well water

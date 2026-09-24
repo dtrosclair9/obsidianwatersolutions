@@ -48,15 +48,15 @@ export default function Header() {
       }`}
     >
       <div className="container-wide">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           <Link href="/" className="flex items-center shrink-0" aria-label="Obsidian Water Solutions – Home">
             <Image
               src="/images/logo.png"
               alt="Obsidian Water Solutions logo"
-              width={520}
-              height={84}
+              width={600}
+              height={159}
               priority
-              className="h-9 lg:h-10 w-auto"
+              className="h-12 lg:h-16 w-auto"
             />
           </Link>
 
